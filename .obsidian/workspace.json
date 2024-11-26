@@ -4,35 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a6eae6d374242319",
+        "id": "20063e40a55c59bb",
         "type": "tabs",
         "children": [
           {
-            "id": "f27457c57535a1de",
+            "id": "31a94cde4ddbc42c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/picture-auto-manager/文章图片自动管理方案：Github + PicGo + jsDelivr + Obsidian.md",
-                "mode": "preview",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "文章图片自动管理方案：Github + PicGo + jsDelivr + Obsidian"
-            }
-          },
-          {
-            "id": "39e957b0d1ea7a75",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "article/picture-auto-manager/文章图片自动管理方案：Github + PicGo + jsDelivr + Obsidian.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "文章图片自动管理方案：Github + PicGo + jsDelivr + Obsidian"
+              "title": "README"
             }
           }
         ]
@@ -107,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/picture-auto-manager/文章图片自动管理方案：Github + PicGo + jsDelivr + Obsidian.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "文章图片自动管理方案：Github + PicGo + jsDelivr + Obsidian 的反向链接列表"
+              "title": "README 的反向链接列表"
             }
           },
           {
@@ -126,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/picture-auto-manager/文章图片自动管理方案：Github + PicGo + jsDelivr + Obsidian.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "文章图片自动管理方案：Github + PicGo + jsDelivr + Obsidian 的出链列表"
+              "title": "README 的出链列表"
             }
           },
           {
@@ -184,22 +170,32 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "0681702a80d1431b",
+  "active": "5a50613090f66d59",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2024-11-23 18.24.09.excalidraw.md",
-    "Pasted Image 20241123183355_119.png",
-    "article/picture-auto-manager/文章图片自动管理方案：Github + PicGo + jsDelivr + Obsidian.md",
-    "Pasted Image 20241123183941_384.png",
-    "Pasted Image 20241123183458_475.png",
-    "Excalidraw",
+    "article/文章图片自动管理方案.md",
     "README.md",
-    "article/picture-auto-manager",
+    "article/自建Docker镜像代理加速.md",
+    "article/用AI解锁技术调研的新姿势.md",
+    "article/用一行命令把任意网站变成桌面应用.md",
+    "article/文章图片自动管理方案：Github.md",
+    "article/web-to-app/image-9.png",
+    "().md",
+    "文章图片自动管理方案：Github.md",
+    "article/docker-hub/image-8.png",
     "image-1.png",
-    "article/web-to-app/image.png",
-    "article/ai-search/用AI解锁技术调研的新姿势.md"
+    "article/ai-search/2024-07-15-19-00S150wZJv7YRVAOL6.gif",
+    "article/docker-hub/image.png",
+    "article/docker-hub/image-7.png",
+    "article/docker-hub/image-6.png",
+    "article/docker-hub/image-5.png",
+    "article/docker-hub/image-4.png",
+    "article/docker-hub/image-3.png",
+    "Excalidraw/Drawing 2024-11-23 18.24.09.excalidraw.md",
+    "Excalidraw",
+    "article/picture-auto-manager"
   ]
 }
