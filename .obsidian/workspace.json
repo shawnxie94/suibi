@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "20063e40a55c59bb",
+        "id": "d5ec5deff16e5a15",
         "type": "tabs",
         "children": [
           {
-            "id": "564dc40326e155f7",
+            "id": "159969ce035375af",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/打造更好用的Mac终端.md",
+                "file": "article/编程史上的趣事（一）.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "打造更好用的Mac终端"
+              "title": "编程史上的趣事（一）"
             }
           }
         ]
@@ -77,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 336.5
   },
   "right": {
     "id": "50930687bb4f99d0",
@@ -174,29 +174,36 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "564dc40326e155f7",
+  "active": "159969ce035375af",
   "lastOpenFiles": [
     "README.md",
-    "article/自建Docker镜像代理加速.md",
-    "article/打造更好用的Mac终端.md",
+    "Excalidraw/Drawing 2024-11-30 18.36.07.excalidraw.md",
+    "article/编程史上的趣事（一）.md",
+    "Pasted Image 20241130183610_275.png",
+    "article/TBD静态页面建站工具调研.md",
+    "article/TBD如何无痛创作？.md",
+    "article/TBD信息源愈发杂乱？搭建导航站管理下吧！.md",
+    "Pasted Image 20241130230215_196.png",
+    "Pasted Image 20241130183612_227.png",
+    "Excalidraw",
+    "Pasted Image 20241130172350_532.png",
+    "Excalidraw/Drawing 2024-11-30 17.17.54.excalidraw.md",
+    "Pasted Image 20241130174857_882.png",
+    "Pasted Image 20241130174748_408.png",
+    "Pasted Image 20241130174639_909.png",
+    "Pasted Image 20241130171857_468.png",
     "article/文章图片自动管理方案.md",
+    "article/打造更好用的Mac终端.md",
     "article/用一行命令把任意网站变成桌面应用.md",
     "article/用AI解锁技术调研的新姿势.md",
+    "article/自建Docker镜像代理加速.md",
+    "未命名文件夹",
     "article/文章图片自动管理方案：Github.md",
     "article/web-to-app/image-9.png",
     "().md",
     "文章图片自动管理方案：Github.md",
     "article/docker-hub/image-8.png",
-    "image-1.png",
-    "article/ai-search/2024-07-15-19-00S150wZJv7YRVAOL6.gif",
-    "article/docker-hub/image.png",
-    "article/docker-hub/image-7.png",
-    "article/docker-hub/image-6.png",
-    "article/docker-hub/image-5.png",
-    "article/docker-hub/image-4.png",
-    "article/docker-hub/image-3.png",
     "Excalidraw/Drawing 2024-11-23 18.24.09.excalidraw.md",
-    "Excalidraw",
     "article/picture-auto-manager"
   ]
 }

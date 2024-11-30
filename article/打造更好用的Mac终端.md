@@ -222,7 +222,12 @@ gbm='git branch --move'
 三方插件，**自动补全**插件，根据历史命令和当前输入内容，自动推荐可能的命令。安装命令：
 ``` Bash
 brew install zsh-autosuggestions
+# 编辑文件
+vim ~/.zshrc
+# 将下面配置加到.zshrc内容末尾
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# 添加内容后执行
+source .zshrc
 ```
 
 ![](https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411272038502.png)
@@ -232,12 +237,18 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 三方插件，**语法高亮**插件，让命令行更加易读易懂。安装命令：
 ```Bash
 brew install zsh-syntax-highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# 编辑文件
+vim ~/.zshrc
+# 将下面配置加到.zshrc内容末尾
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# 添加内容后执行
+source .zshrc
 ```
 
 ![](https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411272029765.png)
 
 **⑥ fzf**
+
 三方插件，**模糊搜索**插件，可以快速搜索历史命令、文件、目录等。安装命令：
 ```Bash
 brew install fzf
