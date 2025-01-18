@@ -2,11 +2,14 @@
 日常随笔...
 
 ## list
-- [自建Docker镜像代理加速](./article自建Docker镜像代理加速.md)
-- [用AI解锁技术调研的新姿势](./article用AI解锁技术调研的新姿势.md)
+- [自建Docker镜像代理加速](./article/自建Docker镜像代理加速.md)
+- [用AI解锁技术调研的新姿势](./article/用AI解锁技术调研的新姿势.md)
 - [用一行命令把任意网站变成桌面应用](./article/用一行命令把任意网站变成桌面应用.md)
 - [文章图片自动管理方案](./article/文章图片自动管理方案.md)
 - [打造更好用的Mac终端](./article/打造更好用的Mac终端.md)
+- [编程史上的趣事（一）](./article/编程史上的趣事（一）.md)
+- [AI Agent初体验：变革正悄然发生](./article/AI%20Agent初体验：变革正悄然发生.md)
+
 
 ...
 
