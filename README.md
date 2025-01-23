@@ -2,6 +2,9 @@
 日常随笔记录...
 
 ## list
+### 年度总结
+- [龙年（2024）总结：折腾](./article/龙年（2024）总结：折腾.md)
+
 ### 个人杂谈
 - [工作五年小结 | 面对不确定性快速上升的外部环境，我们该如何寻求突破？](https://mp.weixin.qq.com/s/XLtPkvDZK2rlxOsSoDbGfA)
 - [现在才开始探索个人IP是不是晚了？](https://mp.weixin.qq.com/s/-7-J0KpzfCl5wX5Rum1ltw)
