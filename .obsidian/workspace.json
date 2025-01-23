@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/AI Agent初体验：变革正悄然发生.md",
-                "mode": "preview",
+                "file": "article/龙年（2024）总结：折腾.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AI Agent初体验：变革正悄然发生"
+              "title": "龙年（2024）总结：折腾"
             }
           }
         ]
@@ -174,13 +174,19 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "5a50613090f66d59",
+  "active": "e0221d684224b46c",
   "lastOpenFiles": [
-    "article/image-8.png",
-    "article/image-15.png",
     "article/AI Agent初体验：变革正悄然发生.md",
     "article/自建Docker镜像代理加速.md",
+    "article/用AI解锁技术调研的新姿势.md",
+    "article/用一行命令把任意网站变成桌面应用.md",
+    "article/文章图片自动管理方案.md",
+    "article/龙年（2024）总结：折腾.md",
+    "article/打造更好用的Mac终端.md",
     "article/编程史上的趣事（一）.md",
+    "article/image.png",
+    "article/image-8.png",
+    "article/image-15.png",
     "README.md",
     "Excalidraw/Drawing 2024-11-30 18.36.07.excalidraw.md",
     "Pasted Image 20241130183610_275.png",
@@ -195,14 +201,8 @@
     "Pasted Image 20241130174857_882.png",
     "Pasted Image 20241130174748_408.png",
     "Pasted Image 20241130174639_909.png",
-    "Pasted Image 20241130171857_468.png",
-    "article/文章图片自动管理方案.md",
-    "article/打造更好用的Mac终端.md",
-    "article/用一行命令把任意网站变成桌面应用.md",
-    "article/用AI解锁技术调研的新姿势.md",
     "未命名文件夹",
     "article/文章图片自动管理方案：Github.md",
-    "article/web-to-app/image-9.png",
     "().md",
     "文章图片自动管理方案：Github.md",
     "Excalidraw/Drawing 2024-11-23 18.24.09.excalidraw.md",
