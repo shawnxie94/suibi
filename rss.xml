@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://shawnxie.top/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <atom:link href="https://shawnxie.top/rss.xml" rel="self" type="application/rss+xml"/>
+    <title>肖恩聊技术</title>
+    <link>https://shawnxie.top/</link>
+    <description>持续提供有价值的技术内容</description>
+    <language>zh-CN</language>
+    <pubDate>Fri, 24 Jan 2025 09:57:40 GMT</pubDate>
+    <lastBuildDate>Fri, 24 Jan 2025 09:57:40 GMT</lastBuildDate>
+    <generator>@vuepress/plugin-feed</generator>
+    <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+    <category>AI探索</category>
+    <category>肖恩杂谈</category>
+    <category>历史考究</category>
+    <category>技术提效</category>
+    <item>
+      <title>AI Agent初体验：变革正悄然发生</title>
+      <link>https://shawnxie.top/blogs/ai/AI%20Agent%E5%88%9D%E4%BD%93%E9%AA%8C%EF%BC%9A%E5%8F%98%E9%9D%A9%E6%AD%A3%E6%82%84%E7%84%B6%E5%8F%91%E7%94%9F.html</link>
+      <guid>https://shawnxie.top/blogs/ai/AI%20Agent%E5%88%9D%E4%BD%93%E9%AA%8C%EF%BC%9A%E5%8F%98%E9%9D%A9%E6%AD%A3%E6%82%84%E7%84%B6%E5%8F%91%E7%94%9F.html</guid>
+      <source url="https://shawnxie.top/rss.xml">AI Agent初体验：变革正悄然发生</source>
+      <description>2022年12月OpenAI推出ChatGPT，经过2023一整年迭代和各方势力追赶，在24年迎来了集体的爆发。各式各样的工具层出不穷，从最开始的聊天机器人，到AI写作工具、AI图像工具、AI视频工具、AI幻灯片工具和AI编程工具等等。好像任何和内容创作相关的场景都可以和大模型挂钩，都能产生“化学反应”。</description>
+      <category>AI探索</category>
+      <pubDate>Sat, 18 Jan 2025 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<p>2022年12月OpenAI推出ChatGPT，经过2023一整年迭代和各方势力追赶，在24年迎来了集体的爆发。各式各样的工具层出不穷，从最开始的聊天机器人，到AI写作工具、AI图像工具、AI视频工具、AI幻灯片工具和AI编程工具等等。好像任何和内容创作相关的场景都可以和大模型挂钩，都能产生“化学反应”。</p>
+<!-- more -->
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421727.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>AI经历了三次发展浪潮，这次是第三次高峰。技术的变革会经过多次的震荡，但每一次发展浪潮都会让更多的泡沫破灭，使得下次的发展达到更高的高度。作为本次浪潮必将被波及的人员，是时候全面拥抱AI了，早点入局能掌握更多主动性，万一这次真实现 <strong>AGI</strong>（通用人工智能）了呢。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421729.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>相关概念</h2>
+<h3>大模型（Large Language Model）</h3>
+<p><strong>大型语言模型</strong>（Large Language Model），通常指的是在机器学习和人工智能领域，尤其是深度学习领域中，<strong>参数数量非常多的模型</strong>。这些模型因为拥有大量的参数，能够捕捉和学习到数据中的复杂模式和关系。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421730.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>大模型的一些关键特点：</p>
+<p><strong>① 参数数量</strong>：大模型通常拥有数百万甚至数十亿个参数，这些参数在训练过程中不断调整以更好地拟合数据；</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421731.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>GPT-4参数约1.76T</span></span>
+<span class="line"><span>GPT-4o参数约200B</span></span>
+<span class="line"><span>GPT-4o mini参数约8B</span></span>
+<span class="line"><span>o1-preview参数约300B</span></span>
+<span class="line"><span>o1-mini参数约100B</span></span>
+<span class="line"><span>Claude 3.5 Sonnet参数约175B</span></span>
+<span class="line"><span>DeepSeek-V3参数约为671B，激活37B</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>PS：1B"的全称是"1 Billion"，表示十亿。</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>② 计算资源需求</strong>：由于参数众多，大模型需要大量的计算资源，包括高性能的GPU或TPU等硬件加速器；</p>
+<p><strong>③ 数据需求</strong>：为了训练这些模型，需要大量的数据来确保模型的泛化能力，避免过拟合。</p>
+<p><strong>④ 复杂性</strong>：大模型能够处理更复杂的任务，如自然语言处理（NLP）、计算机视觉（CV）等，并且通常在这些任务上表现更好。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421732.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li><strong>语言大模型（NLP）</strong>：是指在自然语言处理领域中的一类大模型，通常用于处理文本数据和理解自然语言。这类大模型的主要特点是它们在大规模语料库上进行了训练，以学习自然语言的各种语法、语义和语境规则。</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421733.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>
+<p><strong>视觉大模型（CV）</strong>：是指在计算机视觉领域中使用的大模型，通常用于图像处理和分析。这类模型通过在大规模图像数据上进行训练，可以实现各种视觉任务，如图像分类、目标检测、图像分割、姿态估计、人脸识别等。</p>
+</li>
+<li>
+<p><strong>多模态大模型</strong>：是指能够处理多种不同类型数据的大模型，例如文本、图像、音频等多模态数据。这类模型结合了 NLP 和 CV 的能力，以实现对多模态信息的综合理解和分析，从而能够更全面地理解和处理复杂的数据。</p>
+</li>
+</ul>
+<p><strong>⑤ 泛化能力</strong>：是指一个模型在面对新的、未见过的数据时，能够正确理解和预测这些数据的能力。理论上，参数更多的模型具有更强的泛化能力，能够在未见过的数据上表现良好。</p>
+<p><strong>⑥ 可扩展性</strong>：大模型可以通过增加参数数量来扩展，以适应更复杂的任务或提高性能。</p>
+<p><strong>⑦ 研究和应用</strong>：大模型在学术研究和工业应用中都非常受欢迎，它们推动了许多领域的技术进步。</p>
+<p><strong>⑧ 成本</strong>：训练和部署大模型的成本相对较高，这限制了它们的普及。</p>
+<p><strong>⑨ 环境影响</strong>：大模型的训练和运行可能会消耗大量的能源，对环境产生影响。</p>
+<blockquote>
+<p>扩展阅读：<a href="https://mp.weixin.qq.com/s/k4qzJjI60t_F8Dx7ASEI-g" target="_blank" rel="noopener noreferrer">原来用初中数学就能看懂大语言模型的奥秘</a></p>
+</blockquote>
+<p>虽然LLM很强大，但当前市面上的模型仍有缺陷，主要问题有：</p>
+<ul>
+<li><strong>信息偏差/幻觉</strong></li>
+<li><strong>知识更新滞后性</strong></li>
+<li><strong>内容不可追溯</strong></li>
+<li><strong>领域专业知识能力欠缺</strong></li>
+<li><strong>推理能力限制</strong></li>
+<li><strong>应用场景适应性受限</strong></li>
+<li><strong>长文本处理能力较弱</strong></li>
+</ul>
+<p>其中热度较高的问题——<strong>幻觉</strong>，即生成的内容与可验证的真实世界事实不一致，或者偏离用户指令或提供的上下文信息。</p>
+<p>幻觉产的原因有多个：</p>
+<ul>
+<li><strong>训练数据的局限性</strong>：LLM是基于大量文本数据训练的，但这些数据可能会存在偏差、错误或过时的信息。</li>
+<li><strong>模型结构的限制</strong>：尽管LLM非常强大，但它们本质上是基于统计模式的预测模型，无法真正”理解”信息。</li>
+<li><strong>上下文理解不充分</strong>：LLM可能无法准确把握复杂的上下文关系，导致生成不恰当的内容。</li>
+<li><strong>过度泛化</strong>：模型可能会过度依赖某些模式，导致在新情况下产生错误的推断。</li>
+<li><strong>缺乏实时更新</strong>：LLM通常是基于静态数据训练的，无法及时获取最新信息。</li>
+</ul>
+<p>一般缓解幻觉的方法有：</p>
+<ul>
+<li><strong>提示工程(Prompt Engineering)</strong></li>
+</ul>
+<p>就是那些如雷贯耳的名词：<strong>Prompt、RAG、反馈</strong>机制。相关概念和技术比较多，大家感兴趣可以自行检索一下或阅读<a href="https://www.promptingguide.ai/zh" target="_blank" rel="noopener noreferrer">提示工程指南</a>。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181355837.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li><strong>模型开发(Developing Models)</strong></li>
+</ul>
+<p>从模型架构和训练过程上改善，一般是更多的参数、更好的数据质量。一些关键词：<strong>解码策略 、知识图谱 、监督微调</strong>等。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181358295.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>智能体（AI Agent）</h3>
+<p><strong>智能体</strong>（Intelligent Agent）是一个计算机科学和人工智能领域的概念，它指的是一个能够感知其环境并作出行动以实现某些目标或任务的系统。智能体可以是软件或硬件，或者是两者的结合。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421734.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p><strong>大模型智能体</strong>是一种基于大型语言模型（LLM）构建的智能体，它具备环境感知能力、自主理解、决策制定及执行行动的能力。这种智能体能够模拟独立思考过程，灵活调用各类工具，逐步达成预设目标。在技术架构上，大模型智能体从面向过程的架构转变为面向目标的架构，旨在通过感知、思考与行动的紧密结合，完成复杂任务。</p>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>AI Agent = LLM + Planning + Feedback + Tool use</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421735.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>大模型智能体可以理解为各种技术的综合应用，运用的技术（RAG、提示词工程、知识库和实时检索等）能在一定程度上弥补大模型的缺陷，提升生成内容质量。其核心组成部分包括<strong>感知</strong>（perception）、<strong>大脑</strong>（brain）和<strong>行动</strong>（action），更细化的构成有：</p>
+<p><strong>① 感知系统</strong>（Perception）：</p>
+<ul>
+<li>传感器输入：智能体通过传感器收集环境信息，如视觉、声音、触觉等。</li>
+<li>数据预处理：对收集到的数据进行清洗、标准化等处理，以便于进一步分析。</li>
+</ul>
+<p><strong>② 认知系统</strong>（Cognition）：</p>
+<ul>
+<li>大模型：核心的人工智能模型，能够处理和理解感知系统收集的数据。</li>
+<li>知识库：存储相关的知识信息，供智能体进行推理和决策。</li>
+<li>推理引擎：基于逻辑和规则进行推理，以形成决策或解决问题。</li>
+</ul>
+<p><strong>③ 记忆系统</strong>（Memory）：</p>
+<ul>
+<li>短期记忆：存储当前任务相关的信息。</li>
+<li>长期记忆：存储历史数据和经验，用于学习和模式识别。</li>
+</ul>
+<p><strong>④ 决策系统</strong>（Decision Making）：</p>
+<ul>
+<li>策略生成：根据感知和认知的结果，生成可能的行动方案。</li>
+<li>优化算法：选择最佳行动方案，可能涉及多目标优化、强化学习等技术。</li>
+</ul>
+<p><strong>⑤ 行动系统</strong>（Action）：</p>
+<ul>
+<li>执行器：将决策转化为实际的物理动作或指令。</li>
+<li>反馈机制：执行后的结果反馈给感知系统，形成闭环控制。</li>
+</ul>
+<p><strong>⑥ 学习系统</strong>（Learning）：</p>
+<ul>
+<li>监督学习：通过标记数据学习特定任务。</li>
+<li>无监督学习：在没有明确标记的情况下发现数据中的模式。</li>
+<li>强化学习：通过与环境的交互学习最优策略。</li>
+</ul>
+<p><strong>⑦ 交互系统</strong>（Interaction）：</p>
+<ul>
+<li>自然语言处理：理解和生成自然语言，与人类或其他智能体交流。</li>
+<li>多模态交互：结合视觉、听觉等多种感官信息进行交互。</li>
+</ul>
+<p><strong>⑧ 伦理和安全系统</strong>（Ethics and Safety）：</p>
+<ul>
+<li>伦理决策：确保智能体的决策符合伦理标准。</li>
+<li>安全监控：监控智能体的行为，防止潜在的安全风险。</li>
+</ul>
+<p><strong>⑨ 用户界面</strong>（User Interface）：</p>
+<ul>
+<li>可视化界面：为用户提供直观的操作界面。</li>
+<li>交互设计：设计用户与智能体交互的方式。</li>
+</ul>
+<p><strong>⑩ 硬件平台</strong>（Hardware Platform）：</p>
+<ul>
+<li>计算资源：提供必要的计算能力，如GPU、TPU等。</li>
+<li>存储资源：存储模型、数据和结果。</li>
+</ul>
+<p>一些常见的智能体和智能体构建平台（来源 <a href="https://github.com/e2b-dev/awesome-ai-agents" target="_blank" rel="noopener noreferrer">awesome-ai-agents</a>）：</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181418745.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>国内智能体构建平台举例：</p>
+<ul>
+<li><a href="https://www.coze.cn/" target="_blank" rel="noopener noreferrer">coze</a></li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421736.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li><a href="https://agents.baidu.com/center" target="_blank" rel="noopener noreferrer">文心智能体平台</a></li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421738.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<blockquote>
+<p>扩展阅读：<a href="https://www.anthropic.com/research/building-effective-agents" target="_blank" rel="noopener noreferrer">Building effective agents</a> （Claude官方：构建高效的智能体指南）</p>
+</blockquote>
+<h2>实践案例</h2>
+<h3>搜索智能体</h3>
+<p>顾名思义，就是能够帮你自动检索并总结相关内容的智能体。如果你不擅长信息检索，苦于找不到技术问题或方案的解决思路，那么它可以成为你获取信息的第一步。</p>
+<p>易用性：⭐️⭐️⭐️⭐️⭐️</p>
+<h4><a class="header-anchor" href="#中文-kimi-探索版"><span>中文：</span></a><a href="https://kimi.moonshot.cn/" target="_blank" rel="noopener noreferrer">Kimi 探索版</a></h4>
+<p>具备 AI <strong>自主搜索</strong>能力，可以<strong>模拟人类的推理思考过程</strong>，多级分解复杂问题，执行深度搜索，并<strong>即时反思</strong>改进结果，提供更全面和准确的答案，帮助你更高效地完成分析调研等复杂任务。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421739.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h4><a class="header-anchor" href="#英文-storm"><span>英文：</span></a><a href="https://storm.genie.stanford.edu/" target="_blank" rel="noopener noreferrer">Storm</a></h4>
+<p><strong>STORM</strong> 是一个利用大型语言模型（LLM）的系统，能够从互联网搜索中撰写类似维基百科的文章。核心在于自动提出好问题，它采用了两种策略来提高问题的深度和广度：<strong>视角引导的问题提问和模拟对话</strong>。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421740.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421741.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>问答智能体</h3>
+<p>这里特指<strong>私有知识库问答智能体</strong>，能在理解相关资料的前提下总结核心知识点，并基于已有知识给出回答。</p>
+<p>易用性：⭐️⭐️⭐️⭐️</p>
+<p>底层核心技术包括<strong>提示词和RAG</strong>。提示词的好坏对结果的生成质量影响很大。</p>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>一个优秀的 Prompt = 角色 + 场景 + 任务 + 输出要求</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p><strong>RAG</strong>（检索增强生成）是一个将输入与一组相关的支持文档结合起来的技术，这些文档通常来自于像维基百科这样的来源。这些文档被添加到输入提示中，一起送入文本生成器，从而产生最终的输出。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501130005262.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h4>Ollama+AnythingLLM搭建本地知识库</h4>
+<p><a href="https://github.com/ollama/ollama" target="_blank" rel="noopener noreferrer">Ollama</a> 是一个免费的开源项目，是一个专为在本地机器上便捷部署和运行 LLM 而设计的开源工具，可在<strong>本地运行各种开源 LLM</strong>，它让用户无需深入了解复杂的底层技术，就能轻松地加载、运行和交互各种LLM模型。</p>
+<p><a href="https://github.com/Mintplex-Labs/anything-llm" target="_blank" rel="noopener noreferrer">AnythingLLM</a> 是一个全栈应用程序，可以使用商业现成的 LLM 或流行的开源 LLM 和 vectorDB 解决方案来构建私有 ChatGPT。可以在本地运行，也可以远程托管。<strong>能够在智能聊天中检索提供的任何文件</strong>。</p>
+<p>下面简单介绍一下搭建步骤：</p>
+<p><strong>① 本地大模型安装</strong></p>
+<ul>
+<li>安装 ollama</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421742.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>安装 llama</li>
+</ul>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">ollama</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> run</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> llama3.2</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421743.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>服务器模式启动大模型</li>
+</ul>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">ollama</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> serve</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421744.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p><strong>② 搭建本地LLM交互界面</strong></p>
+<ul>
+<li>安装 anythingllm</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421745.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>模型配置</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421746.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>导入本地文档</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421747.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>开始智能问答</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421748.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>PS：回答的效果依赖大模型的质量，参数越多的大模型对硬件条件要求更大，大家量力而行。</p>
+<h3>编程智能体</h3>
+<p>编程智能体是利用LLM来辅助编程的工具，能提供代码自动生成、补全、翻译、注释添加、智能问答等功能，以提高开发效率和代码质量。网上有一些偏激的言论：“<strong>AI 智能体终将取代现有的程序员岗位！</strong>”。</p>
+<p>易用性：⭐️⭐️⭐️</p>
+<p>提供哪些功能：</p>
+<ul>
+<li><strong>自动化编码</strong></li>
+<li><strong>代码补全和建议</strong></li>
+<li><strong>静态代码分析</strong></li>
+<li><strong>代码性能分析</strong></li>
+<li><strong>代码重构</strong></li>
+<li><strong>测试用例生成</strong></li>
+</ul>
+<p>受限于大模型上下文长度限制，目前对于一些复杂场景表现较差。但随着大模型能力越来越强，会越来越接近较多开发者水平，并在知识广度上更具优势。</p>
+<h4><a class="header-anchor" href="#cline-开源编程智能体插件"><span></span></a><a href="https://github.com/cline/cline" target="_blank" rel="noopener noreferrer">Cline：开源编程智能体插件</a></h4>
+<p><strong>Cline</strong> 是一个开源项目！集成在 IDE中的自主编码智能体，它能够使用命令行界面（CLI）和编辑器来自动化软件开发任务。</p>
+<p>Cline 通过集成大模型编码能力，可以逐步处理复杂的软件开发任务，包括创建和编辑文件、探索大型项目、使用浏览器以及执行终端命令。还可以使用模型上下文协议（MCP）来创建新工具并扩展其功能。Cline 提供了一个人工智能的图形用户界面（GUI），用于确认每个文件更改和终端命令，提供了一个安全且易于访问的方式来探索AI智能体的潜力。</p>
+<p>下面简单介绍安装和配置：</p>
+<p><strong>① VSCode中安装Cline插件</strong></p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421749.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p><strong>② 大模型Key配置</strong></p>
+<p>大模型推荐使用<a href="https://mp.weixin.qq.com/s/iFZOQsUNkpkXPDvOkE99wQ" target="_blank" rel="noopener noreferrer">DeepSeek-V3</a>，国产开源，物美价廉，生成效果堪比主流闭源（吃草挤奶）。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421750.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421751.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p><strong>③ 扩展配置</strong></p>
+<p>主要是文件读取、编辑，命令执行，浏览器和MCP等使用权限设置。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421752.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>下面来看一下两个使用案例：</p>
+<p><strong>案例1：2048小游戏</strong></p>
+<ul>
+<li>描述需求并等待编码完成</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421753.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>任务完成信息</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421754.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>生成效果查看</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421755.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>提交修改意见并等待编码完成</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421756.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>验收效果</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421757.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p><strong>案例2：代码重构 &amp; 单侧生成</strong></p>
+<ul>
+<li>打开已有代码或项目并提交重构诉求</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421758.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>提交单侧生成诉求</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421759.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421760.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>基于运行报错修改单侧代码</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421761.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>将报错信息对话框发送给Cline用于修改代码。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421762.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>运行单侧</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421763.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h4><a class="header-anchor" href="#cursor-超火的ai代码编辑器"><span></span></a><a href="https://www.cursor.com/" target="_blank" rel="noopener noreferrer">Cursor：超火的AI代码编辑器</a></h4>
+<p><strong>Cursor</strong> 是一款基于人工智能的代码编辑器，创建了一个集成开发环境（IDE）。旨在帮助开发人员编写代码，并于AI进行实时互动，提供写代码建议、错误检测和自动补全功能。支持多种编程语言（如Python、JavaScript、Java等）。</p>
+<p><strong>案例：根据图片生成前端页面</strong></p>
+<ul>
+<li>提供一张图片并填写诉求</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421764.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>代码自动生成</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421765.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421766.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>运行查看效果</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421767.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>真的，除了价格都挺美丽。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421768.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>启示</h2>
+<p>既见未来，为何不拜。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421769.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<div style="text-align: center;"> —— 完 —— </div>
+]]></content:encoded>
+      <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501181421727.png" type="image/png"/>
+    </item>
+    <item>
+      <title>用AI解锁技术调研的新姿势</title>
+      <link>https://shawnxie.top/blogs/ai/%E7%94%A8AI%E8%A7%A3%E9%94%81%E6%8A%80%E6%9C%AF%E8%B0%83%E7%A0%94%E7%9A%84%E6%96%B0%E5%A7%BF%E5%8A%BF.html</link>
+      <guid>https://shawnxie.top/blogs/ai/%E7%94%A8AI%E8%A7%A3%E9%94%81%E6%8A%80%E6%9C%AF%E8%B0%83%E7%A0%94%E7%9A%84%E6%96%B0%E5%A7%BF%E5%8A%BF.html</guid>
+      <source url="https://shawnxie.top/rss.xml">用AI解锁技术调研的新姿势</source>
+      <description>在日常开发中，为了保证技术方案的质量，一般会在撰写前进行调研。如果先前没有相关领域的知识储备，笔者的调研方式一般是先通过搜索引擎进行关键字查询，然后再基于搜索的结果进行发散。这样调研的结果受关键字抽象程度和搜索引擎排名影响较大，可能会存在偏差导致调研不充分。刚好大模型风靡有一段时间了，就想如果AI能自动检索资料并进行内容总结，岂不美哉。避免重复造轮子，...</description>
+      <category>AI探索</category>
+      <pubDate>Mon, 15 Jul 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<p>在日常开发中，为了保证技术方案的质量，一般会在撰写前进行调研。如果先前没有相关领域的知识储备，笔者的调研方式一般是先通过搜索引擎进行关键字查询，然后再基于搜索的结果进行发散。这样调研的结果受关键字抽象程度和搜索引擎排名影响较大，可能会存在偏差导致调研不充分。刚好大模型风靡有一段时间了，就想如果AI能自动检索资料并进行内容总结，岂不美哉。避免重复造轮子，先在网上检索了一下，发现刚好有一个工具“<strong>STORM</strong>”满足诉求。</p>
+<!-- more -->
+<h2>什么是STORM?</h2>
+<p><a href="https://github.com/stanford-oval/storm" target="_blank" rel="noopener noreferrer">STORM</a>是一个由斯坦福大学开发的基于大型语言模型（LLM）的知识管理系统，它能够针对特定主题进行研究，并生成带有引用的完整报告。系统分为预写阶段和写作阶段，通过互联网研究收集参考资料并生成大纲，然后利用这些信息生成带引用的全文。STORM通过视角引导提问和模拟对话来提高生成内容的质量，支持自定义检索器和语言模型，以适应不同的使用场景。基本的执行流程如下图：</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270014095.gif" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>怎么使用STORM?</h2>
+<p>可以自己将仓库Clone到本地编译运行（需要设置openai_api_key）或者直接访问<a href="https://storm.genie.stanford.edu/" target="_blank" rel="noopener noreferrer">STORM</a>试用，下面使用直接访问网页的方式进行说明。</p>
+<p><strong>① 设置内容主题并描述撰写的目的</strong></p>
+<p>主题设置为“代码可视化”，并将撰写目的设置为“介绍技术的核心概念和前沿应用”。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270014097.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p><strong>② 自动检索互联网相关资料</strong></p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270014098.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p><strong>③ 使用LLM生成文章内容</strong></p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270014099.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p><strong>④ 通过模拟对话优化生成内容</strong></p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270014100.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p><strong>⑤ 展示生成内容</strong></p>
+<p>得到生成文章，可以下载为PDF格式。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270014101.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>原理浅析</h2>
+<p><strong>STORM</strong>通过两个主要阶段来生成带有引用的长篇文章：</p>
+<ul>
+<li><strong>预写阶段（Pre-writing stage）</strong>：这个阶段系统基于互联网收集参考资料，并生成一个文章大纲。这是文章写作的准备阶段，帮助确定文章的结构和将要包含的关键点；</li>
+<li><strong>写作阶段（Writing stage）</strong>：有了大纲和参考资料，系统会利用这些资料生成完整的文章，并在文章中加入适当的引用。</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270014102.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p><strong>STORM</strong>的优势在于过程的自动化，特别是自动的提出好问题。但直接提示语言模型提出的问题效果并不理想，为了提高问题提问的深度和广度，STORM采用了两种策略：</p>
+<ul>
+<li><strong>视角引导的问题提问（Perspective-Guided Question Asking）</strong>：通过调查类似主题相关文章来发现不同的视角，并利用这些视角来控制提问的过程；</li>
+<li><strong>模拟对话（Simulated Conversation）</strong>：模拟了一个维基百科作者和一个互联网主题专家之间的对话，使语言模型能够更新对主题的理解并提出后续问题。</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270014103.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>整个生成的执行流程如下，可以看到生成一篇文章会进行<strong>多趟</strong>的处理：</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270014104.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>更多关于功能和原理的介绍可以阅读论文：<a href="https://arxiv.org/abs/2402.14207" target="_blank" rel="noopener noreferrer">Assisting in Writing Wikipedia-like Articles From Scratch with Large Language Models</a>。</p>
+<h2>结语</h2>
+<p>使用STORM做技术调研相当的舒服，只需要拿到它生成的文章进行阅读并对内容进行甄别（大模型存在幻觉问题），这极大的提升了工作效率。在大模型时代如果有人说他不知道怎么学习和查找资料，那么估计<strong>99.9999999</strong>...%的概率只是懒而已😁。</p>
+<div style="text-align: center;"> —— 完 —— </div>
+]]></content:encoded>
+      <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270014095.gif" type="image/gif"/>
+    </item>
+    <item>
+      <title>龙年（2024）总结：折腾</title>
+      <link>https://shawnxie.top/blogs/talk/%E9%BE%99%E5%B9%B4%EF%BC%882024%EF%BC%89%E6%80%BB%E7%BB%93%EF%BC%9A%E6%8A%98%E8%85%BE.html</link>
+      <guid>https://shawnxie.top/blogs/talk/%E9%BE%99%E5%B9%B4%EF%BC%882024%EF%BC%89%E6%80%BB%E7%BB%93%EF%BC%9A%E6%8A%98%E8%85%BE.html</guid>
+      <source url="https://shawnxie.top/rss.xml">龙年（2024）总结：折腾</source>
+      <description>若要给龙年的自己一个关键词，那非“折腾”莫属。 工作上这一年达成目标，也逐渐在团队中扮演更重要的角色。家庭上喜迎迷你谢（辛苦火火妈咪），家庭读书会办了 7 场，促进了三代人（迷你谢也开始旁听了！）的关系和睦。个人上技术能力有所突破，认知也在缓慢迭代中，公众号保持住了更新频率，可喜可贺。 由于个人总结很大程度上是写给自己看的，通过给记忆加一个锚点，让回顾...</description>
+      <category>肖恩杂谈</category>
+      <pubDate>Fri, 24 Jan 2025 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<p>若要给龙年的自己一个关键词，那非“<strong>折腾</strong>”莫属。</p>
+<p>工作上这一年达成目标，也逐渐在团队中扮演更重要的角色。家庭上喜迎迷你谢（辛苦火火妈咪），家庭读书会办了 7 场，促进了三代人（迷你谢也开始旁听了！）的关系和睦。个人上技术能力有所突破，认知也在缓慢迭代中，公众号保持住了更新频率，可喜可贺。</p>
+<p>由于个人总结很大程度上是写给自己看的，通过给记忆加一个锚点，让回顾的时候有迹可循。因此下面内容会有点流水账，大家选感兴趣的读读就好。</p>
+<!-- more -->
+<h2>个人成长</h2>
+<p>美团内部有句老话：“<strong>和高人聊，从书上学，在事上练</strong>”，这句话用在个人成长上再合适不过。</p>
+<h3>书上学</h3>
+<p>这一年看了较多书，也很杂，输入最多的是这三本：</p>
+<h4>《置身事内：中国政府与经济发展》</h4>
+<p>这本书真的让我开了眼界，年度最佳。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304342.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h4>《瓦尔登湖》</h4>
+<p>书中金句频频，值得反复看，常看常新。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304344.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h4>《长安的荔枝》</h4>
+<p>社畜真是苦逼，但别小瞧了小人物的决心！</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304345.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>事上练</h3>
+<p>眼过千遍不如手过一遍。</p>
+<h4>写周刊</h4>
+<p>记录周刊开阔了视野，助我逃离井底。这一年共发表了30期周刊，累计87037字（仅统计汉字），各类内容共320条，公众号累计阅读1962人次。</p>
+<p>合集传送门👉🏻：<a href="https://mp.weixin.qq.com/s/q9MAebCSH_9FCbkhIAibZw" target="_blank" rel="noopener noreferrer">2024年周刊合集（01期 - 30期）：AI！AI！还是XX的AI！</a></p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302324791.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h4>写博文</h4>
+<p>2024年撰写博文<strong>19</strong>篇，很好的锻炼了写作能力。</p>
+<p>随笔合集：<a href="https://github.com/Xiaoxie1994/suibi" target="_blank" rel="noopener noreferrer">https://github.com/Xiaoxie1994/suibi</a></p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304346.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h4>写书籍</h4>
+<p>书籍比起博文能更全面的梳理自己的知识体系，发现更多知识盲点。24年开了一本书的坑，目前仅完成大纲和部分内容。</p>
+<p>尝鲜阅读：<a href="https://code-visualization.shawnxie.top/" target="_blank" rel="noopener noreferrer">https://code-visualization.shawnxie.top/</a></p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304347.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h4>做项目</h4>
+<p>业余时间写了两个小项目，累计收获 8 Star和 4 Fork（略惨，哈哈）。</p>
+<p>① <a href="https://github.com/Xiaoxie1994/java-call-graph-diff" target="_blank" rel="noopener noreferrer">java-call-graph-diff</a>：CG的Java实现方式。采用源码静态分析方式，提供静态调用关系图生产和代码变更影响面分析能力。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/java-call-graph-diff/picture/impl.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>② <a href="https://github.com/Xiaoxie1994/developer-hotspots-summary" target="_blank" rel="noopener noreferrer">developer-hotspots-summary</a>：自动汇总并解读热榜内容。通过抓取技术热榜列表数据，并将相关文章内容发送给大模型生成摘要。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/developer-hotspots-summary/picture/image.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h4>做分享</h4>
+<p>参加四川农业大学“朋辈分享沙龙”活动，和有想法的朋友们交流了经验和观点。</p>
+<p>分享内容传送门👉🏻：<a href="https://mp.weixin.qq.com/s/u7nu5KiptHwgkfABcZkIsg" target="_blank" rel="noopener noreferrer">从求学到职场成长之路</a></p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304348.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>高人聊</h3>
+<h4>和朋友聊</h4>
+<p>我的朋友构成基本是同学、同乡和同事，大家随着年龄增长逐渐都积累了很多有意思的想法，因此经常和朋友聊是一件很值得做的事。</p>
+<p>和朋友聊的好处有：</p>
+<ul>
+<li>大多数是同辈且成长经历类似，聊问题能够快速引起共鸣</li>
+<li>认知水平差异不会太大，不会存在沟通障碍</li>
+<li>彼此熟悉且没有利益冲突，沟通时不用过于顾虑面子</li>
+</ul>
+<p>但也存在一些劣势：</p>
+<ul>
+<li>由于互相太熟悉，也会忽略掉一些问题（双方可能都不重视）</li>
+<li>容易带入共同记忆，影响对事物的判断</li>
+<li>朋友也需要常聊常新，很久不联系的朋友反而可能会带来一些负面影响</li>
+</ul>
+<p>列举一些和朋友聊获得的输入：</p>
+<ul>
+<li><strong>朋友A</strong>（海归教授）：<s>雷司令真好喝</s>，我们都有从平凡到卓越的想法和潜力，不甘于现状那就开始折腾。</li>
+<li><strong>朋友B</strong>（资深产品）：</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304349.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li><strong>朋友C</strong>（大学师兄）：你的文章每期必看（情绪价值Max！），可以尝试不同的领域，先模仿。</li>
+<li><strong>朋友D</strong>（好基友）：要在擅长的、感兴趣的和能满足大众需求的交集里做文章，这是理想副业的样子（副业三叶草模型）。</li>
+</ul>
+<p>还有很多给予鼓励和建议的朋友就不一一列举了。</p>
+<h4>和同事聊</h4>
+<p>同事真的是宝藏，不用起来真的太浪费了！在公司除了同组的同事，还有内部的技术分享圈子、论坛一类，都是很好的交流渠道。</p>
+<p>和同事聊的好处有：</p>
+<ul>
+<li>公司藏龙卧虎，同事能在专业领域发表见解，填补自己知识的空白</li>
+<li>拥有相同的公司背景，可以聊得很深</li>
+<li>毕竟同事关系，氛围好，聊的比较轻松</li>
+</ul>
+<p>但也存在一些劣势：</p>
+<ul>
+<li>公司也有群体潜意识，容易形成相似的思维模式，拥有相同的思维盲点</li>
+<li>敏感话题不适合聊</li>
+<li>碎片时间交流，难以体系化</li>
+</ul>
+<p>这一年和很多同事讨论了技术和成长经验，收获颇丰。</p>
+<h4>和面试官聊</h4>
+<p>上面两种方式随着和朋友聊的次数越多，在一家公司待的时间越久，都会出现边际效益。还有一种方式能获得持续的输入，但过程会比较激烈，那就是和面试官聊。</p>
+<p>和面试官聊的好处有：</p>
+<ul>
+<li>能巩固自身知识，重新梳理知识体系</li>
+<li>目的性强，单位时间信息密度高</li>
+<li>匿名聊天，不用太在乎颜面</li>
+<li>面试官一般经验更丰富，能带来一些新的思考角度</li>
+<li>能够很好的锻炼临场表达能力</li>
+</ul>
+<p>但也存在一些劣势：</p>
+<ul>
+<li>大厂一般是买方市场，应聘者处于弱势，多数情况下交流是不平等的</li>
+<li>认知可能差异大，有被全盘否定的可能</li>
+<li>遇人看运气，可能相性不好，过程不愉快</li>
+<li>面试未通过会造成不小打击，影响一段时间情绪</li>
+<li>大厂一般存在冷却期，如果近期有换工作打算会浪费机会</li>
+</ul>
+<p>可见虽然收益很大，但带来的负面影响也不小。所以和面试官聊别太频繁，建议半年来一次就好了。而且由于不是刻意准备面试很可能不通过，但也不要灰心，我们的目的只是提升自己，面试的结果并不那么重要。</p>
+<p>列举一些从面试官那里获得的输入：</p>
+<ul>
+<li><strong>面试官A</strong>：需要将技术思维转变为产品思维，即只给用户提供他们需要的信息。</li>
+<li><strong>面试官B</strong>：一个项目要明确需要解决的核心痛点，再通过分析项目的难点找出需要解决的关键问题。事情的成败在于能否解决关键问题。</li>
+</ul>
+<h2>个人收获</h2>
+<h3>副业收益</h3>
+<p>全部收益将用来春节在公众号发红包，感谢大家一年的支持！</p>
+<h4>公众号</h4>
+<ul>
+<li>打赏收益</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304350.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>流量主收益</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304351.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h4>内推</h4>
+<p>推荐了657份简历，截止目前顺利入职了XX人，收益XX元（目前都是实习生入职，奖励比较少）。</p>
+<p>TBD 待补充收益详情</p>
+<h3>获得荣誉</h3>
+<p>耕耘一年，获得奖牌一个（其实还有个破壁机礼品），感谢公司神灯社区，满足了个人小小的虚荣心。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304352.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>娱乐项目</h2>
+<p>这一年娱乐活动较少，名义上是被孩子禁锢住了，其实是折腾的事太多消耗了大多数精力。下面对相关事项罗列一下：</p>
+<h3>书籍</h3>
+<ul>
+<li>阅读书单</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304353.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>家庭读书会</li>
+</ul>
+<p>举办了7场家庭读书会（各种原因没能完成一年12次的目标），进行了多次思想上的碰撞，不仅增长了知识也促进了家人之间的了解，真的是非常不错的活动。但由于已经举办三年了，逐渐开始出现边际效益，是时候调整一下流程了。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232302643.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>影视</h3>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304354.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>音乐</h3>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304355.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>演唱会</h3>
+<p>告五人重庆演唱会，超嗨！</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304356.png" alt="" loading="lazy"><br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304357.png" alt="" loading="lazy"><br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304358.png" alt="" loading="lazy"></p>
+<h3>旅行</h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304359.png" alt="" loading="lazy"><br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304360.png" alt="" loading="lazy"><br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304361.png" alt="" loading="lazy"><br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304362.png" alt="" loading="lazy"><br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304363.png" alt="" loading="lazy"><br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304364.png" alt="" loading="lazy"><br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304365.png" alt="" loading="lazy"><br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304366.png" alt="" loading="lazy"><br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304367.png" alt="" loading="lazy"><br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304368.png" alt="" loading="lazy"></p>
+<h3>游戏</h3>
+<p>24年游戏玩的不多，除了黑神话其他都是一些休闲小游戏。25年mhw2要发售了，游戏时间应该会增加不少。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304369.png" alt="" loading="lazy"><br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304370.png" alt="" loading="lazy"></p>
+<h2>新年展望</h2>
+<p>前段时间和媳妇聊天，聊起我们回成都的初衷是为了定居，想让更多的时间回归到生活本身，过慢一点。但回来这一年半的时间却像开了快进键一样，我们实际上把生活过的更忙碌了。探讨了背后根本原因并得到一个结论：<strong>我们没办法立刻躺平，还是有太多的欲望</strong>。就像在原地做仰卧起坐的人，刚躺下去就因为各种原因又坐了起来，可能是因为个人发展差异、城市差异、工作氛围差异、人际关系差异或是群体潜意识差异。偶尔我也会在心里做对比，如果留在北京留在熟悉的工作岗位，是不是能比现在获得更多。</p>
+<p>但事情总是往前发展，我逐渐接受了城市、工作的差异，也开始在更多事情上寻找意义。人生绝不是一条路走到黑，换条路走走不也挺好，就算最后又绕回了原点，但风景已经留在脑海里了。况且这条路本就没有终点，走快走慢又有什么意义呢，自己开心才最重要。</p>
+<p>25年继续尝试回归生活本身，告别45°人生，好好生活，过慢一点。</p>
+<p>（年底就能达成<strong>练习时长两年半</strong>了，应该能来一波丝滑转身。）</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304371.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<div style="text-align: center;"> —— 完 —— </div>
+]]></content:encoded>
+      <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304342.png" type="image/png"/>
+    </item>
+    <item>
+      <title>编程史上的趣事（一）</title>
+      <link>https://shawnxie.top/blogs/history/%E7%BC%96%E7%A8%8B%E5%8F%B2%E4%B8%8A%E7%9A%84%E8%B6%A3%E4%BA%8B%EF%BC%88%E4%B8%80%EF%BC%89.html</link>
+      <guid>https://shawnxie.top/blogs/history/%E7%BC%96%E7%A8%8B%E5%8F%B2%E4%B8%8A%E7%9A%84%E8%B6%A3%E4%BA%8B%EF%BC%88%E4%B8%80%EF%BC%89.html</guid>
+      <source url="https://shawnxie.top/rss.xml">编程史上的趣事（一）</source>
+      <description>最近干货吸收的有点多，脑子快转不动了。闲暇时搜罗了一些编程相关的趣事，放松一下。相关内容没有进行严格考证，大家图一乐就好~</description>
+      <category>历史考究</category>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<p>最近干货吸收的有点多，脑子快转不动了。闲暇时搜罗了一些编程相关的趣事，放松一下。相关内容没有进行严格考证，大家图一乐就好~</p>
+<!-- more -->
+<h3>第一台可编程机器</h3>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411301954799.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>世界上第一个可编程的机器是由法国人<a href="https://en.wikipedia.org/wiki/Joseph_Marie_Jacquard" target="_blank" rel="noopener noreferrer">Joseph Marie Jacquard</a>于1801年发明的<a href="https://en.wikipedia.org/wiki/Jacquard_machine" target="_blank" rel="noopener noreferrer">雅卡尔织布机</a>，使用打孔卡片进行编程，控制织布机织出不同图案的布。</p>
+<h3>第一位程序员</h3>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411302007587.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>英国诗人拜伦的女儿，数学家Ada Lovelace描述了一个计算伯努利数的算法和程序，被认为是最早的计算机程序，并被尊为第一位程序员。但是，1815年才出生的她，理论上比Jacquard更晚才进行编程工作（毕竟拜伦女儿更出名吧，然后法国人...每日辱法）。后来美国国防部组织开展研发的Ada语言以这位女数学家的名字命名。</p>
+<h3>第一门高级编程语言</h3>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411302008811.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>一般认为1957年发明的Fortran是世界上第一门高级编程语言，而实际上早在1942至1945年，发明了世界上第一台图灵完全的通用数字计算机Z3的德国工程师<a href="https://en.wikipedia.org/wiki/Konrad_Zuse" target="_blank" rel="noopener noreferrer">Konrad Zuse</a>还研发了一种叫作<a href="https://en.wikipedia.org/wiki/Plankalk%C3%BCl" target="_blank" rel="noopener noreferrer">Plankalkül</a>的语言。</p>
+<p>可惜的是，Z3在1944年柏林轰炸中被炸毁，Plankalkül在战争结束前既没有正式发表，也没有被实现。这门语言的设计一直到了1972年才被正式发表出来，而1998年第一个该语言的编译器才首次被实现。这门语言对后世的编程语言设计几乎没有任何影响，但是它却考虑了包括赋值语句、子程序、条件判断、循环、浮点小数计算、数组、拥有层次结构的结构体、断言、异常处理、结果导向执行等后来许多语言都不具有的功能，这些设计在当时以及之后的很长一段时间内都是非常具有先进性的。</p>
+<h3>C++ 为什么这么复杂</h3>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411302010688.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>C++之父“本贾尼·斯特劳斯特卢普”说他发明C++只是因为发现程序员门槛太低， 导致工资也低，所以发明一个晦涩难学的语言，为的是让程序员能够由此多拿些工资。</p>
+<h3>世界上最好的语言</h3>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411302016029.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>PHP官方文档激进的言论：PHP是最好的语言！目前是程序员常用梗，用来嘲讽程序员技术较差，比较初级，或者只善于做键盘侠，而没有真本事。</p>
+<h3>被谷歌嫌弃年龄的老年大叔</h3>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411302000993.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>Java创始人James Gosling(詹姆斯·高斯林)最早在IBM工作，但是很不受IBM高管的待见，所以辞职转至Sun公司。在Sun公司，他主持并开发了“Oak”语言，这就是Java语言的前生。2000年的时候，Java语言开始大规模流行普及，James Gosling得到了业界的认可。2009年，Sun公司被甲骨文收购，James Gosling随之也去了甲骨文，但是不满一年，他就从甲骨文辞职加入了Google。在加入Google的时候，他曾被HR告知，“通常我们不招你这种年龄的程序员，但你的情况特殊(指的是他 Java 之父的身份)，所以对你特殊考虑”。进入谷歌以后，他的同事都想通过整容变得年轻一点。可能是老年大叔实在无法与年轻人一起愉快的工作，几个月之后，他就从谷歌辞职加入了一家创业公司。</p>
+<h3>打发时间创造的编程语言</h3>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411302013733.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>1989年，Guido van Rossum在阿姆斯特丹为了打发圣诞节的咸鱼时间，开发了一门编程语言——Python。Python是一种解释型、面向对象、动态数据类型的高级程序设计语言，也是全面都应该学习的一种计算机语言，目前的大数据、算法、人工智能等前沿领域都是用其编写。</p>
+<h3>hello, world</h3>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411302026027.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>"Hello, World!"是编程界最经典的入门示例，用于展示一个语言的基本语法和输出功能。</p>
+<p>1972年，在<a href="https://zh.wikipedia.org/wiki/%E8%B2%9D%E7%88%BE%E5%AF%A6%E9%A9%97%E5%AE%A4" title="贝尔实验室" target="_blank" rel="noopener noreferrer">贝尔实验室</a>成员<a href="https://zh.wikipedia.org/wiki/%E5%B8%83%E8%90%8A%E6%81%A9%C2%B7%E6%9F%AF%E6%9E%97%E6%BC%A2" title="布莱恩·柯林汉" target="_blank" rel="noopener noreferrer">布莱恩·柯林汉</a>撰写的内部技术文件《A Tutorial Introduction to the Language B》中首次提到了Hello World这一字符串。当时，他使用<a href="https://zh.wikipedia.org/wiki/B%E8%AA%9E%E8%A8%80" title="B语言" target="_blank" rel="noopener noreferrer">B语言</a>撰写了一个用于演示外部变量的示例程序。</p>
+<p>1974年，时值<a href="https://zh.wikipedia.org/wiki/C%E8%AF%AD%E8%A8%80" title="C语言" target="_blank" rel="noopener noreferrer">C语言</a>取代B语言，在贝尔实验室的又一内部备忘录《Programming in C: A Tutorial》中，柯林汉用C语言再次编写了一个Hello World程序作为教学示例。这一程序在他和<a href="https://zh.wikipedia.org/wiki/%E4%B8%B9%E5%B0%BC%E6%96%AF%C2%B7%E9%87%8C%E5%A5%87" title="丹尼斯·里奇" target="_blank" rel="noopener noreferrer">丹尼斯·里奇</a>于1978年出版的《<a href="https://zh.wikipedia.org/wiki/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80_(%E4%B9%A6)" title="C程序设计语言 (书)" target="_blank" rel="noopener noreferrer">C程序设计语言</a>》中得到继承。</p>
+<h3>Talk is cheap. Show me the code.</h3>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411302031989.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>在 2000 年 8 月 25 日，在讨论关于Linux内核线程优化的问题时，一个人提出了一个他认为非常高效的<a href="https://lkml.org/lkml/2000/8/25/106" target="_blank" rel="noopener noreferrer">方案</a>。Linus Torvalds 认为这个方案不好，便在回信中写下了这句至理名言。</p>
+<h3>BUG</h3>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411302035861.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>1947年9月9日，<a href="https://zh.wikipedia.org/wiki/%E8%91%9B%E9%BA%97%E7%B5%B2%C2%B7%E9%9C%8D%E6%99%AE" title="葛丽丝·霍普" target="_blank" rel="noopener noreferrer">葛丽丝·霍普</a>（Grace Hopper）发现了第一个电脑bug。有一次<a href="https://zh.wikipedia.org/wiki/%E8%A8%88%E7%AE%97%E6%A9%9F%E7%A1%AC%E9%AB%94%E6%AD%B7%E5%8F%B2#%E5%B7%A8%E5%83%8F%E9%9B%BB%E8%85%A6" title="计算机硬件历史" target="_blank" rel="noopener noreferrer">Mark II</a>突然宕机，整队团队都搞不清电脑为何不能正常运作。经过大家深度挖掘，发现原来有<a href="https://zh.wikipedia.org/wiki/%E9%A3%9E%E8%9B%BE" title="飞蛾" target="_blank" rel="noopener noreferrer">飞蛾</a>意外飞入一台电脑引起故障（如图所示）。团队很快排除错误，并在日志本记录这事。也因此，人们逐渐开始用“Bug”（原意为“虫子”）来称呼计算机隐藏错误。</p>
+<h3>价值十亿美元的错误</h3>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411302039073.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>1965年，托尼·霍尔发明了空指针，尽管他也发明过快速排序和霍尔逻辑，但空指针是他最毁誉参半的发明。 2009年一次会议上，他公开道歉，认为这个发明是个价值十亿美元的错误。</p>
+<h3>无法退休的 COBOL 程序员</h3>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411302043906.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>美国至少有 12 个州的失业救济系统运行在已经有 60 年历史、使用 COBOL 编程语言的大型机上。很多 COBOL 职位的招聘要求拥有 20 年工作经验，但开出的年薪却只有 35000 美元。年轻人不愿意学这种复杂的过时语言，这就意味着这些已经 60 岁高龄的 COBOL 程序员至少还需要在未来一二十年里继续维护这些老系统。</p>
+<h3>CAFEBABE</h3>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411302054213.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>Java中<code>class</code>文件的前四个字节是&nbsp;<code>CAFEBABE</code>，为什么这么定义，Java之父詹姆斯•高斯林是这么解释：</p>
+<p>我们过去常去一个叫 St Michael's Alley 的地方吃午饭。根据当地传说，在深邃黑暗的过去，Grateful Dead 乐队在成名之前曾在那里演出。这是一个非常时髦的地方，绝对是一个 Grateful Dead Kinda Place。当 Jerry 去世时，他们甚至建立了一个佛教风格的小神殿，我们把这个地方称为 Cafe Dead。</p>
+<p>可以看到，这是一个十六进制数。那时候我正好需要维护一些文件的编码格式，需要用到两个魔数: 一个用于对象持久化文件，另一个用于类文件。于是我就用 CAFEDEAD 作为对象持久化文件的魔数, 类文件选中了BABE。</p>
+<p>当时这个魔数并没有什么特别的意义，也没有什么重要的，或许很快就会消失在历史中。所以 CAFEBABE 成为 class 文件的魔数，CAFEDEAD 成为持久对象的魔数。但没多久，持久化对象(persistent object)技术真的消失了，就如同魔数 CAFEDEAD 含义一样 —— 被 RMI 取代。</p>
+<div style="text-align: center;"> —— 完 —— </div>
+]]></content:encoded>
+      <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411301954799.png" type="image/png"/>
+    </item>
+    <item>
+      <title>打造更好用的Mac终端</title>
+      <link>https://shawnxie.top/blogs/tools/%E6%89%93%E9%80%A0%E6%9B%B4%E5%A5%BD%E7%94%A8%E7%9A%84Mac%E7%BB%88%E7%AB%AF.html</link>
+      <guid>https://shawnxie.top/blogs/tools/%E6%89%93%E9%80%A0%E6%9B%B4%E5%A5%BD%E7%94%A8%E7%9A%84Mac%E7%BB%88%E7%AB%AF.html</guid>
+      <source url="https://shawnxie.top/rss.xml">打造更好用的Mac终端</source>
+      <description>Mac 自带的终端很简陋，缺少很多必要的功能，用户体验较差。但一个好用的终端将直接给开发人员的工作效率带来极大提升，毕竟很多操作是直接在命令行上执行的。笔者对终端有几个基本的诉求： 好看的界面，并包含一些关键信息，如：用户名、文件路径以及git相关信息等； 关键字高亮，让命令行更加易读易懂； 自动补全，根据历史命令和当前输入内容，自动推荐可能的命令。 ...</description>
+      <category>技术提效</category>
+      <pubDate>Thu, 28 Nov 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<p>Mac 自带的终端很简陋，缺少很多必要的功能，用户体验较差。但一个好用的终端将直接给开发人员的工作效率带来极大提升，毕竟很多操作是直接在命令行上执行的。笔者对终端有几个基本的诉求：</p>
+<ul>
+<li><strong>好看的界面</strong>，并包含一些<strong>关键信息</strong>，如：用户名、文件路径以及git相关信息等；</li>
+<li><strong>关键字高亮</strong>，让命令行更加易读易懂；</li>
+<li><strong>自动补全</strong>，根据历史命令和当前输入内容，自动推荐可能的命令。</li>
+</ul>
+<p>当然还有一些非必要的功能，有的话可以锦上添花，例如：</p>
+<ul>
+<li><strong>快速访问</strong>，快速跳转到常用目录；</li>
+<li><strong>Git命令缩写</strong>，有的命令着实有点长了，能够有效的减少命令输入量；</li>
+<li><strong>模糊搜索</strong>，快速搜索历史命令、文件、目录等。</li>
+</ul>
+<!-- more -->
+<p>笔者目前的终端是基于 <strong>iTerm2 + zsh + Oh My Zsh</strong> 打造的，这套组合基本能满足上述诉求。这些工具不算新了，笔者第一份工作时mentor就给我推荐了。由于存在一定的配置成本，每次更换电脑都需要重新配置，为方便后续配置有迹可循，就有了这篇文章。</p>
+<h2>工具介绍</h2>
+<p>对本文涉及的工具进行简要介绍：</p>
+<h3><a class="header-anchor" href="#homebrew"><span></span></a><a href="https://brew.sh/zh-cn/" target="_blank" rel="noopener noreferrer">Homebrew</a></h3>
+<p>Mac OS 下强大的包管理工具，用来安装软件。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411271656646.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3><a class="header-anchor" href="#iterm2"><span></span></a><a href="https://iterm2.com/" target="_blank" rel="noopener noreferrer">iTerm2</a></h3>
+<p>iTerm2是 Mac OS 终端的替代品，也是iTerm的继承者。iTerm2将终端带入了"只有想不到，没有做不到"的时代。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411271704342.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3><a class="header-anchor" href="#zsh"><span></span></a><a href="https://www.zsh.org/" target="_blank" rel="noopener noreferrer">zsh</a></h3>
+<p>zsh 是 shell 语言类型，兼容bash，提供强大的<strong>交互式</strong>命令行功能，比如 tab 补全，自动纠错功能等。但有一个缺点，就是配置太麻烦。下图介绍了一些常见的shell类型：</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411271717934.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3><a class="header-anchor" href="#oh-my-zsh"><span></span></a><a href="https://ohmyz.sh/" target="_blank" rel="noopener noreferrer">Oh My Zsh</a></h3>
+<p>管理 zsh 配置的框架，提供了数百个插件、主题和功能。只需要简单的修改配置文件，就能让 zsh 用的很顺手。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411271716417.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>配置流程</h2>
+<h3>第一步：安装 Homebrew</h3>
+<h4>安装命令</h4>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">/bin/bash</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -c</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "$(</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">curl</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -fsSL</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>如果执行不成功，可选择国内镜像安装：</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">/bin/zsh</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -c</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "$(</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">curl</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -fsSL</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411271838726.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h4>常用命令</h4>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 查看配置</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">brew</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> config</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 更新 Homebrew</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">brew</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> update</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">#  搜索相关的包</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">brew</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> search</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> [关键词] </span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 查看包的信息</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">brew</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> info</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> [软件名]</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 查看已安装的包</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">brew</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> list</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 更新某个软件</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">brew</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> upgrade</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> [软件名]</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 清理所有软件的旧版</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">brew</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> cleanup</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 卸载某个软件</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">brew</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> uninstall</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> [软件名]</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 安装某个软件</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">brew</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> install</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> [软件名]</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 安装cask软件</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">brew</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> install</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --cask</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> [软件名]</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3>第二步：安装 iTerm 2</h3>
+<h4>安装命令</h4>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">brew</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> install</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> iterm2</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411271841097.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h4>个性化设置</h4>
+<p>可以在Settings中进行个性化配置，如字体、背景、快捷键等，笔者一般情况下直接使用默认配置。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411271847191.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>第三步：安裝 zsh</h3>
+<p>更多安装信息可以访问<a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH" target="_blank" rel="noopener noreferrer">Installing ZSH</a>。</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">brew</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> install</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> zsh</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411271851444.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>第四步：安装 Oh My Zsh 并配置</h3>
+<h4>安装命令</h4>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sh</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -c</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "$(</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">curl</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -fsSL</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411271907948.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h4>个性化配置</h4>
+<ul>
+<li><strong>别名配置</strong></li>
+</ul>
+<p>oh my zsh内置了很多命令缩写别名，可执行aliases命令展示所有的别名（很多和git相关）。</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 获取所有别名</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">aliases</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">——————</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> 别名列表（部分）</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ——————</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">-</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'cd -'</span></span>
+<span class="line"><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">...</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">=</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">.</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">./</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">..</span></span>
+<span class="line"><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">....</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">=</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">.</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">./</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">.</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">./</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">..</span></span>
+<span class="line"><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">.....</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">=</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">.</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">./</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">.</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">./</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">.</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">./</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">..</span></span>
+<span class="line"><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">......</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">=</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">.</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">./</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">.</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">./</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">.</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">./</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">.</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">./</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">..</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">1</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'cd -1'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">2</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'cd -2'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">3</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'cd -3'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">4</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'cd -4'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">5</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'cd -5'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">6</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'cd -6'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">7</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'cd -7'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">8</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'cd -8'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">9</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'cd -9'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">_</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'sudo '</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">egrep</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'grep -E'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">fgrep</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'grep -F'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">g</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">git</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">ga</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git add'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gaa</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git add --all'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gam</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git am'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gama</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git am --abort'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gamc</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git am --continue'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gams</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git am --skip'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gamscp</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git am --show-current-patch'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gap</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git apply'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gapa</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git add --patch'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gapt</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git apply --3way'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gau</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git add --update'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gav</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git add --verbose'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gb</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git branch'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gbD</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git branch --delete --force'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gba</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git branch --all'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gbd</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git branch --delete'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gbg</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'LANG=C git branch -vv | grep ": gone\]"'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gbgD</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'LANG=C git branch --no-color -vv | grep ": gone\]" | cut -c 3- | awk '</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">\'</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'{print $1}'</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">\'</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">' | xargs git branch -D'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gbgd</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'LANG=C git branch --no-color -vv | grep ": gone\]" | cut -c 3- | awk '</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">\'</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'{print $1}'</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">\'</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">' | xargs git branch -d'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gbl</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git blame -w'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gbm</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git branch --move'</span></span>
+<span class="line"><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">......</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">history</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">omz_history</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">l</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'ls -lah'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">la</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'ls -lAh'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">ll</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'ls -lh'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">ls</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'ls -G'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">lsa</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'ls -lah'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">md</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'mkdir -p'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">rd</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">rmdir</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">run-help</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">man</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">which-command</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">whence</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li><strong>主题设置</strong></li>
+</ul>
+<p>主题主要用于定制Zsh终端外观，默认主题为“robbyrussell”。替换方式是编辑<code>~/.zshrc</code>文件，将<code>ZSH_THEME</code>设置为对应主题。</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 编辑文件</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">vim</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ~/.zshrc</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 添加内容后执行</span></span>
+<span class="line"><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">source</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> .zshrc</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411271938526.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>但一些主题可能和系统默认字体不兼容，导致一些字符不能正常展示。这种情况下需要额外安装字体，笔者懒得折腾，一般就使用默认主题。下面展示agnoster和gnzh主题样式，更多样式可以到<a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes" target="_blank" rel="noopener noreferrer">Themes</a>查看。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411271939377.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411271942728.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>至此，<strong>好看的界面</strong>这一诉求已经达成了，其他的诉求则通过插件方式实现。</p>
+<ul>
+<li><strong>插件配置</strong></li>
+</ul>
+<p>Oh My Zsh 有几百个<a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins" target="_blank" rel="noopener noreferrer">官方插件</a>，还有很多第三方插件，提供了各式各样的功能。但很多并不常用，笔者这里只推荐个人平常使用较多的插件，若对插件感兴趣可自行阅读一下相关文档。</p>
+<p><strong>① git</strong></p>
+<p>官方插件，默认开启。提供<strong>Git命令别名</strong>，帮助在终端中加快使用Git的速度。下面展示部分内容，查看全部别名列表可访问<a href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git/" target="_blank" rel="noopener noreferrer">git</a>。</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">g</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">git</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">ga</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git add'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gaa</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git add --all'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gam</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git am'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gama</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git am --abort'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gamc</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git am --continue'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gams</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git am --skip'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gamscp</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git am --show-current-patch'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gap</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git apply'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gapa</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git add --patch'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gapt</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git apply --3way'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gau</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git add --update'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gav</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git add --verbose'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gb</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git branch'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gbD</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git branch --delete --force'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gba</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git branch --all'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gbd</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git branch --delete'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gbg</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'LANG=C git branch -vv | grep ": gone\]"'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gbgD</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'LANG=C git branch --no-color -vv | grep ": gone\]" | cut -c 3- | awk '</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">\'</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'{print $1}'</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">\'</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">' | xargs git branch -D'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gbgd</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'LANG=C git branch --no-color -vv | grep ": gone\]" | cut -c 3- | awk '</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">\'</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'{print $1}'</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">\'</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">' | xargs git branch -d'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gbl</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git blame -w'</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">gbm</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">'git branch --move'</span></span>
+<span class="line"><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">......</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>② sudo</strong></p>
+<p>官方插件，把<code>sudo</code>&nbsp;作为当前或前一个命令的前缀，只需按两下<code>ESC</code>。通过编辑<code>~/.zshrc</code>文件，在<code>plugins</code>配置换行添加插件名即可开启。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411272009329.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p><strong>③ z</strong></p>
+<p>官方插件，开启方式同上。跟踪最常访问的目录，能够通过输入所需目录路径中的几个字符来<strong>快速访问</strong>。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411272030894.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411272013222.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p><strong>④ zsh-autosuggestions</strong></p>
+<p>三方插件，<strong>自动补全</strong>插件，根据历史命令和当前输入内容，自动推荐可能的命令。安装命令：</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">brew</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> install</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> zsh-autosuggestions</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 编辑文件</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">vim</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ~/.zshrc</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 将下面配置加到.zshrc内容末尾</span></span>
+<span class="line"><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">source</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 添加内容后执行</span></span>
+<span class="line"><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">source</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> .zshrc</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411272038502.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p><strong>⑤ zsh-syntax-highlighting</strong></p>
+<p>三方插件，<strong>语法高亮</strong>插件，让命令行更加易读易懂。安装命令：</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">brew</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> install</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> zsh-syntax-highlighting</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 编辑文件</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">vim</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ~/.zshrc</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 将下面配置加到.zshrc内容末尾</span></span>
+<span class="line"><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">source</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 添加内容后执行</span></span>
+<span class="line"><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">source</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> .zshrc</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411272029765.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p><strong>⑥ fzf</strong></p>
+<p>三方插件，<strong>模糊搜索</strong>插件，可以快速搜索历史命令、文件、目录等。安装命令：</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">brew</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> install</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> fzf</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">[ </span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">-f</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> ~/.fzf.zsh ] &amp;&amp; </span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">source</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ~/.fzf.zsh</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411272055083.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>结语</h2>
+<p>上述配置后就能获得一个基本好用的终端了，但也只是基本好用，因为在AI时代，终端也需要与时俱进。iTerm2提供了与OpenAI的集成方法，但功能仅仅是用大模型辅助生成命令，能提供的帮助比较有限。</p>
+<figure><img src="https://pic-bed-1256249917.cos.ap-chengdu.myqcloud.com/uPic/iterm2-ai-003-20240614205616478.gif" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>其他比较火的AI终端有<a href="https://www.warp.dev" target="_blank" rel="noopener noreferrer">warp</a>，但由于笔者还没有深入试用，下次再分享吧。warp官方做了与ITerm2的功能对比，可以先看看<a href="https://www.warp.dev/compare-terminal-tools/iterm2-vs-warp" target="_blank" rel="noopener noreferrer">iterm2-vs-warp</a>。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411272128581.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<div style="text-align: center;"> —— 完 —— </div>
+]]></content:encoded>
+      <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411271656646.png" type="image/png"/>
+    </item>
+    <item>
+      <title>文章图片自动管理方案</title>
+      <link>https://shawnxie.top/blogs/tools/%E6%96%87%E7%AB%A0%E5%9B%BE%E7%89%87%E8%87%AA%E5%8A%A8%E7%AE%A1%E7%90%86%E6%96%B9%E6%A1%88.html</link>
+      <guid>https://shawnxie.top/blogs/tools/%E6%96%87%E7%AB%A0%E5%9B%BE%E7%89%87%E8%87%AA%E5%8A%A8%E7%AE%A1%E7%90%86%E6%96%B9%E6%A1%88.html</guid>
+      <source url="https://shawnxie.top/rss.xml">文章图片自动管理方案</source>
+      <description>笔者在我的内容创作最强搭子——Kimi中介绍了周刊创作时素材收集和整理的基本思路，这之后便会进行文章撰写。 写作在电脑本地进行，采用 Markdown 语法，不过其有一个缺点——不能所见即所得。因此需要一个专业的 Markdown 写作编辑器来展示效果，笔者目前使用双链笔记工具 Obsidian。 另外本地写作使用 Markdown 时还有一个痛点——...</description>
+      <category>技术提效</category>
+      <pubDate>Sat, 23 Nov 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<p>笔者在<a href="https://mp.weixin.qq.com/s/HDUjesD7Qs5o9qm3bPs_ZA" target="_blank" rel="noopener noreferrer">我的内容创作最强搭子——Kimi</a>中介绍了周刊创作时素材收集和整理的基本思路，这之后便会进行文章撰写。</p>
+<p>写作在电脑本地进行，采用 <a href="https://www.markdownguide.org" target="_blank" rel="noopener noreferrer">Markdown</a> 语法，不过其有一个缺点——<strong>不能所见即所得</strong>。因此需要一个专业的 Markdown 写作编辑器来展示效果，笔者目前使用双链笔记工具 Obsidian。</p>
+<p>另外本地写作使用 Markdown 时还有一个痛点——<strong>图片管理困难</strong>。图片粘贴后默认存放到本地目录下，如果路径进行了变更还需要手动调整图片的引用。前期周刊写完后还需要一一检查图片的引用，相当的痛苦，这对写作意愿有不小的消耗。</p>
+<p>针对上述第二个痛点，本文将介绍一种图片管理方案，不花一分钱即可实现文章图片自动管理，做到“<strong>一次写作，到处（粘贴）发布</strong>”。</p>
+<!-- more -->
+<h2>工具介绍</h2>
+<p>对本文涉及的工具进行简要介绍：</p>
+<ul>
+<li><strong><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></strong></li>
+</ul>
+<p>代码托管云服务网站，帮助开发者存储和管理其项目源代码。在本文中充当<strong>免费图床</strong>作用。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411231816214.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li><strong><a href="https://molunerfinn.com/PicGo/" target="_blank" rel="noopener noreferrer">PicGo</a></strong></li>
+</ul>
+<p>一个用于快速上传图片并获取图片 URL 链接的工具。在本文中提供<strong>图片上传+管理</strong>功能。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411231814767.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li><strong><a href="https://www.jsdelivr.com/" target="_blank" rel="noopener noreferrer">jsDelivr</a></strong></li>
+</ul>
+<p>国外的优秀公共 CDN 服务提供商，也是首个打通中国大陆与海外的免费 CDN 服务。在本文中用来<strong>加速 Github 仓库的图片链接访问速度</strong>。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411231817239.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li><strong><a href="https://obsidian.md/" target="_blank" rel="noopener noreferrer">Obsidian</a></strong></li>
+</ul>
+<p>一款强大的知识管理和笔记软件，以Markdown编辑器为基础，支持双向链接和图谱视图，帮助用户构建知识网络。在本文中配合插件<a href="https://github.com/renmu123/obsidian-image-auto-upload-plugin" target="_blank" rel="noopener noreferrer">image-auto-upload</a>实现文章<strong>图片自动管理</strong>。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411231819700.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>详细方案</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411231847843.png" alt="" loading="lazy"><br>
+上图为各工具交互示意图，黑色箭头表示图片上传过程，红色箭头表示图片访问过程，下面将介绍详细配置步骤：</p>
+<h3>第一步：配置GitHub免费图床</h3>
+<h4>① 创建公共仓库</h4>
+<p>在Github中<a href="https://github.com/new" target="_blank" rel="noopener noreferrer">创建</a>一个公共仓库，用于存放上传的图片。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411231928488.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h4>② 生成Github访问token</h4>
+<ul>
+<li>在<a href="https://github.com/settings/tokens" target="_blank" rel="noopener noreferrer">开发设置</a>中选择生成新token</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411231930473.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>选择永不过期，并按照下图设置访问权限</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411231931131.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>拉到最下面，点击&nbsp;<code>Generate token</code>，生成并复制（一定要保存好token，只会在创建时显示一次）</li>
+</ul>
+<h3>第二步：安装PicGo并配置图床</h3>
+<ul>
+<li>访问<a href="https://github.com/Molunerfinn/PicGo/releases" target="_blank" rel="noopener noreferrer">releases</a>找到对应操作系统安装包下载并安装</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411231937398.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>打开PicGo，在图床设置中配置好GitHub设置（token即为第一步中申请值）</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411231940672.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>第三步：配置图片链接CDN加速</h3>
+<p>按照下述格式配置图片链接即可享有jsdelivr提供的加速能力。</p>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>https://cdn.jsdelivr.net/gh/{github账号名}/{仓库名}/{图片路径}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>在PicGo中GitHub设置中设定自定义域名，即可自动生成加速后图片链接。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411231949714.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>第四步：Obsidian图片自动上传配置</h3>
+<ul>
+<li>在Obsidian的偏好“第三方插件”配置中关闭安全模式，之后浏览插件市场安装image-auto-upload并开启插件</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411231951700.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>插件设置中已经默认配好了PicGo相关参数，如有需要也可以自行调整</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411231953924.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>按上述配置好后，即可开启丝滑的写作体验</li>
+</ul>
+<p>将图片粘贴到文章中，将自动上传并展示。Markdown图文内容变成了<strong>纯静态数据</strong>，想粘贴就粘贴。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411232002552.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>结语</h2>
+<p>文章写好后再结合之前推荐的<a href="https://mp.weixin.qq.com/s/4Du8pyhz9357lxkG0Z8gpQ" target="_blank" rel="noopener noreferrer">doocs/md</a>公众号排版工具，只需<strong>点点点</strong>（粘贴markdown到md，粘贴排版后内容到公众号，再点击发布），一篇规整的公众号文章就发出来啦！</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411232018369.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>图片存储还有很多其他方案（专业图床），有兴趣的朋友可以自行检索一下。如果图片链接可以顺畅访问则不需要配置cdn加速，例如使用Gitee作为图床。另外PicGo还提供了大量插件，如果有特殊的需求不妨看看。</p>
+<div style="text-align: center;"> —— 完 —— </div>
+]]></content:encoded>
+      <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411231816214.png" type="image/png"/>
+    </item>
+    <item>
+      <title>用一行命令把任意网站变成桌面应用</title>
+      <link>https://shawnxie.top/blogs/tools/%E7%94%A8%E4%B8%80%E8%A1%8C%E5%91%BD%E4%BB%A4%E6%8A%8A%E4%BB%BB%E6%84%8F%E7%BD%91%E7%AB%99%E5%8F%98%E6%88%90%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8.html</link>
+      <guid>https://shawnxie.top/blogs/tools/%E7%94%A8%E4%B8%80%E8%A1%8C%E5%91%BD%E4%BB%A4%E6%8A%8A%E4%BB%BB%E6%84%8F%E7%BD%91%E7%AB%99%E5%8F%98%E6%88%90%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8.html</guid>
+      <source url="https://shawnxie.top/rss.xml">用一行命令把任意网站变成桌面应用</source>
+      <description>传统意义上，网站不是”用户拥有的东西“，而更像是”用户访问的地方“，具有以下特点： 用户不访问时，网站不在用户的设备上存在：这意味着网站不像应用程序那样可以安装在用户的设备上，用户不使用时，网站不会占用设备资源； 用户只能通过打开浏览器访问网站：用户需要主动打开浏览器，输入网址或点击链接才能访问网站； 高度依赖网络连接：网站需要网络连接才能访问，如果用...</description>
+      <category>技术提效</category>
+      <pubDate>Sat, 28 Sep 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<p>传统意义上，网站不是”用户<strong>拥有</strong>的东西“，而更像是”用户<strong>访问</strong>的地方“，具有以下特点：</p>
+<ol>
+<li><strong>用户不访问时，网站不在用户的设备上存在</strong>：这意味着网站不像应用程序那样可以安装在用户的设备上，用户不使用时，网站不会占用设备资源；</li>
+<li><strong>用户只能通过打开浏览器访问网站</strong>：用户需要主动打开浏览器，输入网址或点击链接才能访问网站；</li>
+<li><strong>高度依赖网络连接</strong>：网站需要网络连接才能访问，如果用户没有网络，就无法访问网站。</li>
+</ol>
+<p>但如果我们发现了一个有意思的网站，想拥有它，这时就不希望它是传统意义上的网站了，更希望是一个原生的APP。这样当我们使用时，点击一个图标即可打开，提供沉浸式的用户体验。</p>
+<!-- more -->
+<p>举个例子，笔者写公众号使用的排版工具<a href="https://doocs.github.io/md/" target="_blank" rel="noopener noreferrer"><strong>doocs/md</strong></a>，官方提供了网站，也可以自己本地部署，但页面用起来体验始终不如本地APP，并且自己部署也会存在新功能难以快速同步的问题。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270030266.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>PWA很好，但不通用</h2>
+<p>使用Chrome浏览器打开网页时，细心地小伙伴能发现导航栏有时会有这样的小图标。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270030267.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>点击一下，就能将网页下载到本地。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270030268.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>这种能下载的网页叫<strong>渐进式Web应用</strong>（Progressive Web App，<strong>PWA</strong>），可以直接通过浏览器安装，像原生APP一样在线或离线使用。但想让一个网站成为PWA是有前提的，需要在网站开发的时候就按照规定的方式编写代码（具体的要求这里就不详述了，有兴趣的朋友可以自行查一下）。</p>
+<p>对于一些不是PWA的网站，如前文提到的doocs/md，还有没有其他办法将其变成桌面软件呢？</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270030270.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>将任意网页变为桌面应用</h2>
+<p>是的，有，刚好有这么一个便利的工具——<a href="https://github.com/tw93/Pake" target="_blank" rel="noopener noreferrer"><strong>Pake</strong></a>。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270030271.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>Pake是国内一个前端大佬做的开源工具，能够将<strong>任何网页</strong>转换成桌面应用程序。它支持Mac、Windows和Linux系统，并且相较于Electron打包的应用程序体积更小、速度更快。Pake提供了命令行工具来简化打包流程，并允许用户自定义开发。</p>
+<p>下面简要介绍一下提供的三种使用方式：</p>
+<h3>常用包下载</h3>
+<p>提供了一些常用网站的包，进行一些定制优化，可以去仓库<a href="https://github.com/tw93/Pake/releases" target="_blank" rel="noopener noreferrer">Release</a>下载安装使用。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270030272.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>命令行一键打包</h3>
+<p>对于未提供的网站，可以使用下面命令一键打包。</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 使用 npm 进行安装</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npm</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> install</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -g</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> pake-cli</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 命令使用格式</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">pake</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> url</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> [OPTIONS]...</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 打包举例</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">pake</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> https://www.shawnxie.top/</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --name</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> Shawn-Weekly</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>命令参数详细说明可以参考<a href="https://github.com/tw93/Pake/blob/master/bin/README_CN.md" target="_blank" rel="noopener noreferrer">README_CN</a>。</p>
+<p>注：Pake底层使用的是Tauri，环境一定要按照<a href="https://tauri.app/zh-cn/v1/guides/getting-started/prerequisites/#%E7%AE%A1%E7%90%86-rust-%E5%AE%89%E8%A3%85" target="_blank" rel="noopener noreferrer">要求</a>安装，不然会出现一些报错。如果按照下面命令安装后还有问题，可以在Issue里找一下解决方法。</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># MAC环境安装</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 安装 CLang 和 macOS 开发依赖项</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">xcode-select</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --install</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 安装 Rust</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">curl</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --proto</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> '=https'</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --tlsv1.2</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> https://sh.rustup.rs</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -sSf</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> | </span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sh</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># node安装一下最新版本</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">nvm</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> install</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> v20.17.0</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>现在我们就用一行命令把前文中提到的doocs/md打包成桌面APP吧！</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">pake</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> https://doocs.github.io/md</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --name</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> Wechat-MD</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --icon</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ./Markdown.icns</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>省略命令执行过程，得到一个安装包。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270030273.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>安装之后我们就能像本地APP一样使用doocs/md网站啦，大功告成！</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270030274.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>定制开发</h3>
+<p>针对爱折腾的用户，也提供了「定制开发」方式，可深度二次开发定制功能。笔者刚好前端和Rust都不会，直接Pass。</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 安装依赖</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npm</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> i</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 本地开发[右键可打开调试模式]</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npm</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> run</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> dev</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 打包应用</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npm</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> run</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> build</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3>原理浅析</h3>
+<p>前面提到Pake底层使用了<a href="https://tauri.app/zh-cn/" target="_blank" rel="noopener noreferrer">Tauri</a>，它是一款应用构建的工具包，能够为使用Web技术的所有主流桌面操作系统构建软件。Tauri的核心是用Rust构建的，CLI（命令行界面）则利用了Node.js。相较于其他同类型工具，Tauri拥有诸多优点。奈何笔者前端和Rust都不太懂，就不进一步探究啦，感兴趣的小伙伴可以自行查查资料。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270030275.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<div style="text-align: center;"> —— 完 —— </div>
+]]></content:encoded>
+      <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270030266.png" type="image/png"/>
+    </item>
+    <item>
+      <title>自建Docker镜像代理加速</title>
+      <link>https://shawnxie.top/blogs/tools/%E8%87%AA%E5%BB%BADocker%E9%95%9C%E5%83%8F%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9F.html</link>
+      <guid>https://shawnxie.top/blogs/tools/%E8%87%AA%E5%BB%BADocker%E9%95%9C%E5%83%8F%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9F.html</guid>
+      <source url="https://shawnxie.top/rss.xml">自建Docker镜像代理加速</source>
+      <description>Docker Hub 是一个容器注册表，专为开发人员和开源贡献者构建，用于查找、使用和共享其容器镜像。但从2023年5月中旬，hub.docker.com “不知” 何种原因国内均无法正常访问了，好在国内各大高校和容器技术社区提供了加速站点，国内开发者还是能获取到各种镜像。</description>
+      <category>技术提效</category>
+      <pubDate>Thu, 05 Sep 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<p>Docker Hub 是一个容器注册表，专为开发人员和开源贡献者构建，用于查找、使用和共享其容器镜像。但从2023年5月中旬，<a href="http://hub.docker.com" target="_blank" rel="noopener noreferrer">hub.docker.com</a> “不知” 何种原因国内均无法正常访问了，好在国内各大高校和容器技术社区提供了加速站点，国内开发者还是能获取到各种镜像。</p>
+<!-- more -->
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270017430.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>好景不长，今年6月份各大高校和容器技术社区由于一些不可抗因素，纷纷关闭了镜像加速站点，这极大地影响了工作效率和开发进度。</p>
+<p>为了继续使用DockerHub获取各种各样的镜像数据，我们可以尝试自己搭建代理，中转对Docker官方镜像仓库的请求，解决一些访问限制和加速访问的问题。下文介绍基于Cloudflare Workers的Docker镜像代理部署和使用。</p>
+<h2>部署DockerHub代理</h2>
+<h3><a class="header-anchor" href="#fork仓库cf-workers-docker-io"><span></span></a><a href="http://xn--forkCF-Workers-docker-vd47av52v.io" target="_blank" rel="noopener noreferrer">fork仓库CF-Workers-docker.io</a></h3>
+<p><a href="http://xn--CF-Workers-docker-zj85a.io" target="_blank" rel="noopener noreferrer">将CF-Workers-docker.io</a>(<a href="https://github.com/cmliu/CF-Workers-docker.io" target="_blank" rel="noopener noreferrer">https://github.com/cmliu/CF-Workers-docker.io</a>)fork到自己仓库。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270017433.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>部署到Cloudflare的pages中</h3>
+<ul>
+<li>创建pages应用</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270017434.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>连接GitHub</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270017435.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>选择存储库部署</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270017436.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>等待部署完成</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270017437.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>获取镜像代理域名</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270017438.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270017439.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>自定义域名（可选）</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270017440.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270017441.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270017442.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270017443.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>如何配置镜像加速</h2>
+<h3>官方镜像路径前加域名</h3>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">docker</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> pull</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> dockers.shawnxie.top/library/nginx:latest</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3>设置镜像加速docker配置</h3>
+<p>修改文件 /etc/docker/daemon.json（如果不存在则创建）</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> mkdir</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -p</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /etc/docker</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> tee</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /etc/docker/daemon.json</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> &lt;&lt;-</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">'EOF'</span></span>
+<span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">{</span></span>
+<span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">  "registry-mirrors": ["https://dockers.shawnxie.top"]  # 请替换为您自己的Worker自定义域名</span></span>
+<span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">}</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">EOF</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> systemctl</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> daemon-reload</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> systemctl</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> restart</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> docker</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>可以执行 docker info命令，如果从结果中看到了如下内容，说明配置成功。</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">docker</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> info</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div>]]></content:encoded>
+      <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270017430.png" type="image/png"/>
+    </item>
+  </channel>
+</rss>
