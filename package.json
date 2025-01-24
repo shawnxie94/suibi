@@ -1,0 +1,22 @@
+{
+  "name": "blogs",
+  "description": "日常随笔",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "docs:build": "vuepress-vite build src",
+    "docs:clean-dev": "vuepress-vite dev src --clean-cache",
+    "docs:dev": "vuepress-vite dev src",
+    "docs:update-package": "npx vp-update"
+  },
+  "devDependencies": {
+    "@vuepress/bundler-vite": "2.0.0-rc.19",
+    "sass-embedded": "^1.83.0",
+    "vue": "^3.5.13",
+    "vuepress": "2.0.0-rc.19",
+    "vuepress-theme-hope": "2.0.0-rc.70",
+    "@vuepress/plugin-slimsearch": "^2.0.0-rc.67",
+    "@vuepress/plugin-feed": "^2.0.0-rc.66"
+  }
+}
