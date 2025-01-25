@@ -93,6 +93,6 @@ Java中`class`文件的前四个字节是 `CAFEBABE`，为什么这么定义，
 <div style="text-align: center;"> —— 完 —— </div>
 
 ---
-关注“**肖恩聊技术**”公众号，更多原创技术文章第一时间推送~
+关注“**肖恩聊技术**”公众号，第一时间推送更多原创技术文章~
 
 <img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300">

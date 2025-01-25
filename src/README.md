@@ -18,7 +18,7 @@ projects:
     desc: 通过可视化方式去探索代码的潜在力量
     link: https://code-visualization.shawnxie.top/
   
-footer: 肖恩聊技术：持续提供有价值的技术内容
+# footer: 肖恩聊技术：持续提供有价值的技术内容
 ---
 
 <!-- 这是一个博客主页的案例。

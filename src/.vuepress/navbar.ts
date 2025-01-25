@@ -9,7 +9,7 @@ export default navbar([
     link: "/timeline/",
   },
   {
-    text: "肖恩技术周刊",
+    text: "技术周刊",
     icon: "newspaper",
     link: "https://weekly.shawnxie.top/",
   },

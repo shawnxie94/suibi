@@ -38,7 +38,7 @@
 <p>使用STORM做技术调研相当的舒服，只需要拿到它生成的文章进行阅读并对内容进行甄别（大模型存在幻觉问题），这极大的提升了工作效率。在大模型时代如果有人说他不知道怎么学习和查找资料，那么估计<strong>99.9999999</strong>...%的概率只是懒而已😁。</p>
 <div style="text-align: center;"> —— 完 —— </div>
 <hr>
-<p>关注“<strong>肖恩聊技术</strong>”公众号，更多原创技术文章第一时间推送~</p>
+<p>关注“<strong>肖恩聊技术</strong>”公众号，第一时间推送更多原创技术文章~</p>
 <img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></div></template>
 
 
