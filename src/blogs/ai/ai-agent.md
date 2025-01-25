@@ -3,6 +3,7 @@ icon: en-to-square
 date: 2025-01-18
 category:
   - AI探索
+  - 技术提效
 tag:
   - AI
   - 智能体
@@ -368,6 +369,6 @@ Cline 通过集成大模型编码能力，可以逐步处理复杂的软件开�
 <div style="text-align: center;"> —— 完 —— </div>
 
 ---
-关注“**肖恩聊技术**”公众号，第一时间推送更多原创技术文章~
+关注“**肖恩聊技术**”公众号，原创技术文章第一时间推送~
 
 <img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300">

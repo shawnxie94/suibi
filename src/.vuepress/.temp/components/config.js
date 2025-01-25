@@ -1,8 +1,8 @@
-import { hasGlobalComponent } from "/Users/xiexiao6/repo/github/suibi/node_modules/@vuepress/helper/lib/client/index.js";
-import Badge from "/Users/xiexiao6/repo/github/suibi/node_modules/vuepress-plugin-components/lib/client/components/Badge.js";
-import VPCard from "/Users/xiexiao6/repo/github/suibi/node_modules/vuepress-plugin-components/lib/client/components/VPCard.js";
+import { hasGlobalComponent } from "/Users/shawn/Documents/GitHub/suibi/node_modules/@vuepress/helper/lib/client/index.js";
+import Badge from "/Users/shawn/Documents/GitHub/suibi/node_modules/vuepress-plugin-components/lib/client/components/Badge.js";
+import VPCard from "/Users/shawn/Documents/GitHub/suibi/node_modules/vuepress-plugin-components/lib/client/components/VPCard.js";
 
-import "/Users/xiexiao6/repo/github/suibi/node_modules/@vuepress/helper/lib/client/styles/sr-only.css";
+import "/Users/shawn/Documents/GitHub/suibi/node_modules/@vuepress/helper/lib/client/styles/sr-only.css";
 
 export default {
   enhance: ({ app }) => {

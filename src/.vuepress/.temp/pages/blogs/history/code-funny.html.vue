@@ -48,7 +48,7 @@
 <p>当时这个魔数并没有什么特别的意义，也没有什么重要的，或许很快就会消失在历史中。所以 CAFEBABE 成为 class 文件的魔数，CAFEDEAD 成为持久对象的魔数。但没多久，持久化对象(persistent object)技术真的消失了，就如同魔数 CAFEDEAD 含义一样 —— 被 RMI 取代。</p>
 <div style="text-align: center;"> —— 完 —— </div>
 <hr>
-<p>关注“<strong>肖恩聊技术</strong>”公众号，第一时间推送更多原创技术文章~</p>
+<p>关注“<strong>肖恩聊技术</strong>”公众号，原创技术文章第一时间推送~</p>
 <img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></div></template>
 
 

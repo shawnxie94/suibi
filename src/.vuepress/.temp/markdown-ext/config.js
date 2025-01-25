@@ -1,3 +1,3 @@
-import "/Users/xiexiao6/repo/github/suibi/node_modules/@mdit/plugin-spoiler/spoiler.css"
+import "/Users/shawn/Documents/GitHub/suibi/node_modules/@mdit/plugin-spoiler/spoiler.css"
 
 

@@ -23,9 +23,9 @@
 <p>合集传送门👉🏻：<a href="https://mp.weixin.qq.com/s/q9MAebCSH_9FCbkhIAibZw" target="_blank" rel="noopener noreferrer">2024年周刊合集（01期 - 30期）：AI！AI！还是XX的AI！</a></p>
 <figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302324791.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h4 id="写博文" tabindex="-1"><a class="header-anchor" href="#写博文"><span>写博文</span></a></h4>
-<p>2024年撰写博文<strong>19</strong>篇，很好的锻炼了写作能力。</p>
-<p>随笔合集：<a href="https://github.com/Xiaoxie1994/suibi" target="_blank" rel="noopener noreferrer">https://github.com/Xiaoxie1994/suibi</a></p>
-<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304346.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>2024年撰写博文<strong>14</strong>篇，很好的锻炼了写作能力。</p>
+<p>时间线：<a href="https://shawnxie.top/timeline/" target="_blank" rel="noopener noreferrer">https://shawnxie.top/timeline/</a></p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251406530.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h4 id="写书籍" tabindex="-1"><a class="header-anchor" href="#写书籍"><span>写书籍</span></a></h4>
 <p>书籍比起博文能更全面的梳理自己的知识体系，发现更多知识盲点。24年开了一本书的坑，目前仅完成大纲和部分内容。</p>
 <p>尝鲜阅读：<a href="https://code-visualization.shawnxie.top/" target="_blank" rel="noopener noreferrer">https://code-visualization.shawnxie.top/</a></p>
@@ -136,25 +136,29 @@
 <p>举办了7场家庭读书会（各种原因没能完成一年12次的目标），进行了多次思想上的碰撞，不仅增长了知识也促进了家人之间的了解，真的是非常不错的活动。但由于已经举办三年了，逐渐开始出现边际效益，是时候调整一下流程了。</p>
 <figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232302643.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h3 id="影视" tabindex="-1"><a class="header-anchor" href="#影视"><span>影视</span></a></h3>
+<p>24年就去了1次电影院，看了“<strong>沙丘2</strong>”，画质和音乐还是一如既往的优秀，可惜剧情有点无语。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251418532.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>平常就刷刷B站，看看下饭视频。</p>
 <figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304354.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h3 id="音乐" tabindex="-1"><a class="header-anchor" href="#音乐"><span>音乐</span></a></h3>
 <figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304355.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h3 id="演唱会" tabindex="-1"><a class="header-anchor" href="#演唱会"><span>演唱会</span></a></h3>
 <p>告五人重庆演唱会，超嗨！</p>
-<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304356.png" alt="" loading="lazy"><br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304357.png" alt="" loading="lazy"><br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304358.png" alt="" loading="lazy"></p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304356.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304357.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304358.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h3 id="旅行" tabindex="-1"><a class="header-anchor" href="#旅行"><span>旅行</span></a></h3>
-<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304359.png" alt="" loading="lazy"><br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304360.png" alt="" loading="lazy"><br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304361.png" alt="" loading="lazy"><br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304362.png" alt="" loading="lazy"><br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304363.png" alt="" loading="lazy"><br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304364.png" alt="" loading="lazy"><br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304365.png" alt="" loading="lazy"><br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304366.png" alt="" loading="lazy"><br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304367.png" alt="" loading="lazy"><br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304368.png" alt="" loading="lazy"></p>
+<p>媳妇怀孕，24年基本只在成都周边转转。<br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304359.png" alt="" loading="lazy"></p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304360.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304361.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304362.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304363.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304364.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304365.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304366.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304367.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304368.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h3 id="游戏" tabindex="-1"><a class="header-anchor" href="#游戏"><span>游戏</span></a></h3>
 <p>24年游戏玩的不多，除了黑神话其他都是一些休闲小游戏。25年mhw2要发售了，游戏时间应该会增加不少。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304369.png" alt="" loading="lazy"><br>
@@ -167,7 +171,7 @@
 <figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304371.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <div style="text-align: center;"> —— 完 —— </div>
 <hr>
-<p>关注“<strong>肖恩聊技术</strong>”公众号，第一时间推送更多原创技术文章~</p>
+<p>关注“<strong>肖恩聊技术</strong>”公众号，原创技术文章第一时间推送~</p>
 <img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></div></template>
 
 

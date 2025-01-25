@@ -79,7 +79,7 @@
 <p>图片存储还有很多其他方案（专业图床），有兴趣的朋友可以自行检索一下。如果图片链接可以顺畅访问则不需要配置cdn加速，例如使用Gitee作为图床。另外PicGo还提供了大量插件，如果有特殊的需求不妨看看。</p>
 <div style="text-align: center;"> —— 完 —— </div>
 <hr>
-<p>关注“<strong>肖恩聊技术</strong>”公众号，第一时间推送更多原创技术文章~</p>
+<p>关注“<strong>肖恩聊技术</strong>”公众号，原创技术文章第一时间推送~</p>
 <img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></div></template>
 
 

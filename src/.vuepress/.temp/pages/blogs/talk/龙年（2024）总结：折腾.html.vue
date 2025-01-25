@@ -167,7 +167,7 @@
 <figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304371.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <div style="text-align: center;"> —— 完 —— </div>
 <hr>
-<p>关注“<strong>肖恩聊技术</strong>”公众号，第一时间推送更多原创技术文章~</p>
+<p>关注“<strong>肖恩聊技术</strong>”公众号，原创技术文章第一时间推送~</p>
 <img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></div></template>
 
 

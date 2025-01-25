@@ -1,15 +1,15 @@
-import { Layout, NotFound, injectDarkmode, setupDarkmode, setupSidebarItems, scrollPromise } from "/Users/xiexiao6/repo/github/suibi/node_modules/vuepress-theme-hope/lib/bundle/export.js";
+import { Layout, NotFound, injectDarkmode, setupDarkmode, setupSidebarItems, scrollPromise } from "/Users/shawn/Documents/GitHub/suibi/node_modules/vuepress-theme-hope/lib/bundle/export.js";
 
-import { defineCatalogInfoGetter } from "/Users/xiexiao6/repo/github/suibi/node_modules/@vuepress/plugin-catalog/lib/client/index.js"
+import { defineCatalogInfoGetter } from "/Users/shawn/Documents/GitHub/suibi/node_modules/@vuepress/plugin-catalog/lib/client/index.js"
 import { h } from "vue"
 import { resolveComponent } from "vue"
-import { BlogCategory, BlogHome, BlogType, BloggerInfo, SocialMedias, Timeline, setupBlog } from "/Users/xiexiao6/repo/github/suibi/node_modules/vuepress-theme-hope/lib/bundle/modules/blog/export.js";
-import "/Users/xiexiao6/repo/github/suibi/node_modules/vuepress-theme-hope/lib/bundle/modules/blog/styles/all.scss";
+import { BlogCategory, BlogHome, BlogType, BloggerInfo, SocialMedias, Timeline, setupBlog } from "/Users/shawn/Documents/GitHub/suibi/node_modules/vuepress-theme-hope/lib/bundle/modules/blog/export.js";
+import "/Users/shawn/Documents/GitHub/suibi/node_modules/vuepress-theme-hope/lib/bundle/modules/blog/styles/all.scss";
 
-import "/Users/xiexiao6/repo/github/suibi/node_modules/@vuepress/helper/lib/client/styles/colors.css";
-import "/Users/xiexiao6/repo/github/suibi/node_modules/@vuepress/helper/lib/client/styles/normalize.css";
-import "/Users/xiexiao6/repo/github/suibi/node_modules/@vuepress/helper/lib/client/styles/sr-only.css";
-import "/Users/xiexiao6/repo/github/suibi/node_modules/vuepress-theme-hope/lib/bundle/styles/all.scss";
+import "/Users/shawn/Documents/GitHub/suibi/node_modules/@vuepress/helper/lib/client/styles/colors.css";
+import "/Users/shawn/Documents/GitHub/suibi/node_modules/@vuepress/helper/lib/client/styles/normalize.css";
+import "/Users/shawn/Documents/GitHub/suibi/node_modules/@vuepress/helper/lib/client/styles/sr-only.css";
+import "/Users/shawn/Documents/GitHub/suibi/node_modules/vuepress-theme-hope/lib/bundle/styles/all.scss";
 
 defineCatalogInfoGetter((meta) => {
   const title = meta.t;

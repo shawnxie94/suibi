@@ -1,7 +1,7 @@
-import { hasGlobalComponent } from "/Users/xiexiao6/repo/github/suibi/node_modules/@vuepress/helper/lib/client/index.js";
-import { useScriptTag } from "/Users/xiexiao6/repo/github/suibi/node_modules/@vueuse/core/index.mjs";
+import { hasGlobalComponent } from "/Users/shawn/Documents/GitHub/suibi/node_modules/@vuepress/helper/lib/client/index.js";
+import { useScriptTag } from "/Users/shawn/Documents/GitHub/suibi/node_modules/@vueuse/core/index.mjs";
 import { h } from "vue";
-import { VPIcon } from "/Users/xiexiao6/repo/github/suibi/node_modules/@vuepress/plugin-icon/lib/client/index.js"
+import { VPIcon } from "/Users/shawn/Documents/GitHub/suibi/node_modules/@vuepress/plugin-icon/lib/client/index.js"
 
 export default {
   enhance: ({ app }) => {
