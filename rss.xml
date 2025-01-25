@@ -6,14 +6,16 @@
     <link>https://shawnxie.top/</link>
     <description>持续提供有价值的技术内容</description>
     <language>zh-CN</language>
-    <pubDate>Sat, 25 Jan 2025 02:11:34 GMT</pubDate>
-    <lastBuildDate>Sat, 25 Jan 2025 02:11:34 GMT</lastBuildDate>
+    <pubDate>Sat, 25 Jan 2025 06:24:45 GMT</pubDate>
+    <lastBuildDate>Sat, 25 Jan 2025 06:24:45 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>AI探索</category>
-    <category>历史考究</category>
-    <category>肖恩杂谈</category>
     <category>技术提效</category>
+    <category>历史考究</category>
+    <category>代码可视化</category>
+    <category>基础理论</category>
+    <category>肖恩杂谈</category>
     <item>
       <title>AI Agent初体验：变革正悄然发生</title>
       <link>https://shawnxie.top/blogs/ai/ai-agent.html</link>
@@ -21,6 +23,7 @@
       <source url="https://shawnxie.top/rss.xml">AI Agent初体验：变革正悄然发生</source>
       <description>2022年12月OpenAI推出ChatGPT，经过2023一整年迭代和各方势力追赶，在24年迎来了集体的爆发。各式各样的工具层出不穷，从最开始的聊天机器人，到AI写作工具、AI图像工具、AI视频工具、AI幻灯片工具和AI编程工具等等。好像任何和内容创作相关的场景都可以和大模型挂钩，都能产生“化学反应”。</description>
       <category>AI探索</category>
+      <category>技术提效</category>
       <pubDate>Sat, 18 Jan 2025 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <p>2022年12月OpenAI推出ChatGPT，经过2023一整年迭代和各方势力追赶，在24年迎来了集体的爆发。各式各样的工具层出不穷，从最开始的聊天机器人，到AI写作工具、AI图像工具、AI视频工具、AI幻灯片工具和AI编程工具等等。好像任何和内容创作相关的场景都可以和大模型挂钩，都能产生“化学反应”。</p>
@@ -326,6 +329,7 @@
       <source url="https://shawnxie.top/rss.xml">用AI解锁技术调研的新姿势</source>
       <description>在日常开发中，为了保证技术方案的质量，一般会在撰写前进行调研。如果先前没有相关领域的知识储备，笔者的调研方式一般是先通过搜索引擎进行关键字查询，然后再基于搜索的结果进行发散。这样调研的结果受关键字抽象程度和搜索引擎排名影响较大，可能会存在偏差导致调研不充分。刚好大模型风靡有一段时间了，就想如果AI能自动检索资料并进行内容总结，岂不美哉。避免重复造轮子，...</description>
       <category>AI探索</category>
+      <category>技术提效</category>
       <pubDate>Mon, 15 Jul 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <p>在日常开发中，为了保证技术方案的质量，一般会在撰写前进行调研。如果先前没有相关领域的知识储备，笔者的调研方式一般是先通过搜索引擎进行关键字查询，然后再基于搜索的结果进行发散。这样调研的结果受关键字抽象程度和搜索引擎排名影响较大，可能会存在偏差导致调研不充分。刚好大模型风靡有一段时间了，就想如果AI能自动检索资料并进行内容总结，岂不美哉。避免重复造轮子，先在网上检索了一下，发现刚好有一个工具“<strong>STORM</strong>”满足诉求。</p>
@@ -368,6 +372,65 @@
 <div style="text-align: center;"> —— 完 —— </div>
 ]]></content:encoded>
       <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270014095.gif" type="image/gif"/>
+    </item>
+    <item>
+      <title>我的内容创作最强搭子——Kimi</title>
+      <link>https://shawnxie.top/blogs/ai/kimi.html</link>
+      <guid>https://shawnxie.top/blogs/ai/kimi.html</guid>
+      <source url="https://shawnxie.top/rss.xml">我的内容创作最强搭子——Kimi</source>
+      <description>如果说编程上有难题，现在第一个想到的是问GPT，一般能给出比较满意的答案，生成的代码也基本靠谱。 但由于网络和中文语境要求，日常还是更多使用国内的大模型。在众多国内大模型中，笔者为何对Kimi情有独钟呢？因为我收...那必须是因为它的强项——长文本解读能力啦！</description>
+      <category>AI探索</category>
+      <category>技术提效</category>
+      <pubDate>Sat, 12 Oct 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<p>如果说编程上有难题，现在第一个想到的是问GPT，一般能给出比较满意的答案，生成的代码也基本靠谱。</p>
+<p>但由于网络和中文语境要求，日常还是更多使用国内的大模型。在众多国内大模型中，笔者为何对Kimi情有独钟呢？因为我收...那必须是因为它的强项——<strong>长文本解读能力</strong>啦！</p>
+<!-- more -->
+<figure><img src="https://fastly.jsdelivr.net/gh/bucketio/img0@main/2024/10/11/1728653751927-a3043a57-b2d8-4ed0-9fe6-a3dcbc7efa56.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>初识Kimi</h2>
+<p>初识是在大牛猫的文章里，某期日更里提到了AI独角兽公司“<strong>月之暗面</strong>”和它旗下的产品<strong>Kimi</strong>。当时还是比较初期的版本，大牛猫用它解读了一些文档，都能给出一些比较好的归纳，后面又陆续提到过几次，就记住了。</p>
+<figure><img src="https://fastly.jsdelivr.net/gh/bucketio/img12@main/2024/10/11/1728655092434-0b527764-9059-49b2-94c6-333200d56cd7.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>恰逢那段时间在整理“代码可视化”的理论知识，会进行大量的检索和文字阅读，十分的耗费精力。随即就想到了Kimi，网站版自带了检索能力，再结合长文本解读能力，着实节省了我不少素材找寻和解读的时间。</p>
+<h2>内容创作v1.0</h2>
+<p>有了这次不错的体验后，后续使用Kimi的就更频繁了，但也仅仅停留在简单的文本解读上。直到有一天笔者突然问了Kimi这么一个问题（至于为什么问这个问题就不得而知了）：</p>
+<figure><img src="https://fastly.jsdelivr.net/gh/bucketio/img18@main/2024/10/11/1728655679168-66d76ae9-68d6-4dfa-9080-251f21ffd998.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>回答的第一条是“<strong>知识与学习</strong>”。但学习的方式有很多种，对笔者而言了解新技术和新热点是保持职业热爱很重要的方式。但日常工作已经占用了大量的时间，根本就没有时间搜集并学习新知识。</p>
+<p>就想如果有一个工具能<strong>自动抓取技术热点并将长篇大论的文字浓缩为100~200字左右的摘要</strong>，这样每天花半个小时就能消化信息了，这也太棒了吧。</p>
+<p>于是做了第一次尝试，实现了一个自动抓取热点并总结的小工具，实现思路见下图。内容回顾戳👉🏻 <a href="https://mp.weixin.qq.com/s/qelnn3DWsOic0_5iXMKrJw" target="_blank" rel="noopener noreferrer">没时间了解技术热点？让大模型帮你整理重点吧！</a></p>
+<figure><img src="https://fastly.jsdelivr.net/gh/bucketio/img5@main/2024/10/11/1728656247843-80967bb2-f3be-4149-9f1e-eb577aae7aea.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>不过这一版工具有一个缺陷，就是当时Kimi的API不支持搜索功能（目前已支持，戳👉🏻<a href="https://mp.weixin.qq.com/s/BWVAAvqnGum3iIg93pJhuA" target="_blank" rel="noopener noreferrer">Kimi API 支持联网搜索增强了！</a>），于是笔者自己手搓了一个页面检索和内容解析工具，但由于没有处理噪音整体效果比较一般。</p>
+<p>但通过这次尝试至少跑通了流程。接着字节推出了coze，也第一时间集成到了工具中。工作流体验确实很不错，替换掉了自己写的搜索和内容解析工具。</p>
+<figure><img src="https://fastly.jsdelivr.net/gh/bucketio/img5@main/2024/10/11/1728657739857-e056914e-c3ae-4b06-8292-4712b204a2bf.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>再之后的事大家都知道了，笔者开始发<strong>技术周刊</strong>了！</p>
+<figure><img src="https://fastly.jsdelivr.net/gh/bucketio/img3@main/2024/10/11/1728657483200-149807bd-6e85-4998-8b7d-fcc6500ae29c.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>内容创作v2.0</h2>
+<p>不过在第7期的时候笔者逐渐放弃了这个小工具，转而人工的收集周刊内容。究其原因主要有两点：</p>
+<h3>内容准确度较差</h3>
+<p>这个准确度不是指Kimi总结的内容和原文的差异，指的是收集的很多文章本身是没有营养的，这主要受限于信息源的质量和笔者手搓的爬虫缺少数据预处理能力。</p>
+<p>同时也考虑到既然周刊公开发布了，要对自己的内容负责，至少保证最后选出的内容都阅读过一遍。因此在迭代爬虫和转人工中，选择了后者。</p>
+<figure><img src="https://fastly.jsdelivr.net/gh/bucketio/img14@main/2024/10/11/1728659145536-d20ab013-10cd-4f17-90c5-6c99fba59ccb.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>Kimi发布浏览器插件了！</h3>
+<p>刚好7月Kimi发布了一个超好用的功能“<a href="https://mp.weixin.qq.com/s/-srEcOwDiEoHp1tTdleTPA" target="_blank" rel="noopener noreferrer">Kimi 浏览器插件来了！</a>”，省去了人工粘贴文章链接到Kimi主页的过程，在原始页面上就能进行内容摘要生成。由于这个功能的出现，转人工处理后工作量也没有较大上涨（要是工作量大也坚持不了多久😂）。</p>
+<figure><img src="https://fastly.jsdelivr.net/gh/bucketio/img5@main/2024/10/11/1728659698339-ac1726cb-6170-4313-ab06-23ca05b920b8.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>内容创作v3.0</h2>
+<p>现在，Kimi发布了新的重磅功能“<a href="https://mp.weixin.qq.com/s/cRXe0HFO5BX0AzziaqoiKg" target="_blank" rel="noopener noreferrer">Kimi 探索版来了，最好的搜索是不用自己搜索</a>”，补齐了信息搜索这一拼图，终于能彻底解放双手啦？官方对探索版的定义是：</p>
+<blockquote>
+<p>Kimi 探索版具备 AI 自主搜索能力，可以模拟人类的推理思考过程，多级分解复杂问题，执行深度搜索，并即时反思改进结果，提供更全面和准确的答案，帮助你更高效地完成分析调研等复杂任务。</p>
+</blockquote>
+<figure><img src="https://fastly.jsdelivr.net/gh/bucketio/img1@main/2024/10/11/1728660032061-85b50d2c-8d50-4300-b5eb-bca2d6a5217e.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>看了官方示例，更多是帮助用户<strong>节省花在搜索调研任务上的时间</strong>，让大家可以有更多时间<strong>专注于提出问题、思考和创造</strong>。</p>
+<figure><img src="https://fastly.jsdelivr.net/gh/bucketio/img16@main/2024/10/11/1728660483053-732aa9ed-ddc4-4457-9201-b5114a9b3a57.gif" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>咦？这好像和笔者之前用过的一个工具有点相似（相关内容戳👉🏻 <a href="https://mp.weixin.qq.com/s/hzZHwjKH5IE6H0yNXVhDPQ" target="_blank" rel="noopener noreferrer">用 AI 解锁技术调研的新姿势</a>）。不过虽然都是针对调研场景，STORM主要的检索页面和生成的结果都是英文的，在知识库选择和语境上还是有明显的差异。<strong>Kimi更适合中国宝宝体质！</strong></p>
+<figure><img src="https://fastly.jsdelivr.net/gh/bucketio/img18@main/2024/10/11/1728660744143-52c8de18-0706-411a-95ef-0af09e3d6777.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>让Kimi汇总“本周技术人应该关注的热点信息”，得到的结果颇具参考意义。信息有来源可追溯，关键是能节省看网站的时间，想想319个网站全部看一遍标题都得费些功夫了。</p>
+<figure><img src="https://fastly.jsdelivr.net/gh/bucketio/img2@main/2024/10/11/1728661394008-55798098-3850-4b10-adab-fa5e32ffe191.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>别忘了Kimi还支持<strong>多轮对话</strong>，能够按照诉求对生成内容进行调整，理论上有更强的扩展性。</p>
+<p>所以是时候再迭代一下“<strong>热点收集小工具</strong>”了，把这些新特性融入进去，可能就能实现最初的梦想——<strong>坐等AI把饭</strong>（有用的信息）<strong>喂嘴里</strong>。</p>
+<figure><img src="https://fastly.jsdelivr.net/gh/bucketio/img5@main/2024/10/12/1728663283269-f77a2bcf-ee06-4080-8236-2ecfbef62e49.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>最后也希望Kimi越来越好，能够杀出重围，持续提供更多真正好用的功能。</p>
+<div style="text-align: center;"> —— 完 —— </div>
+]]></content:encoded>
+      <enclosure url="https://fastly.jsdelivr.net/gh/bucketio/img0@main/2024/10/11/1728653751927-a3043a57-b2d8-4ed0-9fe6-a3dcbc7efa56.png" type="image/png"/>
     </item>
     <item>
       <title>编程史上的趣事（一）</title>
@@ -430,6 +493,268 @@
       <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411301954799.png" type="image/png"/>
     </item>
     <item>
+      <title>代码可视化(Code Visualization)</title>
+      <link>https://shawnxie.top/blogs/code-visualization/code-visualization-intro.html</link>
+      <guid>https://shawnxie.top/blogs/code-visualization/code-visualization-intro.html</guid>
+      <source url="https://shawnxie.top/rss.xml">代码可视化(Code Visualization)</source>
+      <description>Code visualization is the process of creating graphical representations of source code to help understand and analyze it. 代码可视化是创建源代码的图形表示以帮助理解和分析它的过程。 个人理解：通过使用图形化手段（架构图、依赖图、分布...</description>
+      <category>代码可视化</category>
+      <pubDate>Fri, 26 Apr 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<blockquote>
+<p>Code visualization is the process of creating graphical representations of source code to help understand and analyze it.<br>
+代码可视化是创建源代码的图形表示以帮助理解和分析它的过程。</p>
+</blockquote>
+<p><strong>个人理解</strong>：通过使用图形化手段（架构图、依赖图、分布式追踪、类图、火焰图、CallGraph等）使代码在某些特征上变得可观测，用于辅助开发人员理解分析项目或建设一些自动化工具。</p>
+<!-- more -->
+<h2>为什么需要代码可视化?</h2>
+<p>下面通过几个场景来说明开发、测试同学为什么需要代码可视化功能：</p>
+<h3>场景1：代码逻辑理解困难</h3>
+<p>项目代码量很大且需求迭代快，每次梳理的文档很快就过时了。新同学入手困难苦不堪言，老手也很难对项目整体的业务逻辑有一个全面的认知，常常需要重新梳理逻辑。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251311287.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>场景2：代码改动影响面难以评估</h3>
+<p>需求的诉求是修改A页面的逻辑，但由于后端代码很多公用逻辑且调用层级很深，上线才后发现影响了B页面的逻辑，造成了线上事故。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251311465.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>场景3：遗留项目重构缺少抓手</h3>
+<p>老旧遗留项目经过长时间迭代和多次更换团队，导致内部代码逻辑十分混乱且没人能完全讲明白所有逻辑。但新的业务迭代需求源源不断，在原有项目上修改成本越来越高，亟需重构以获得更高地研发效率。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251311868.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p><strong>其他场景</strong>：代码改动影响面评估不准导致自动化case编写困难，回归也常常覆盖不到关联逻辑；线上问题排查困难，难以快速定位到出错代码......</p>
+<h2>怎么实现代码可视化?</h2>
+<p>实现过程大体可以分两步走：</p>
+<ul>
+<li>第一步<strong>程序分析</strong>：获取到源码、各种中间表示方式或其他方式采集的数据形成可视化的数据基础；</li>
+<li>第二步<strong>数据可视化</strong>：根据想要观测的视角选择对应的图表类型，将第一步获取的数据进行可视化展示。</li>
+</ul>
+<p>当然对于实际应用场景完成可视化也只是刚刚开始，之后会基于可观测的部分再结合自己的诉求建设更复杂的工具。后面将从理论和实践两部分进行展开阐述：</p>
+<ul>
+<li>了解实现代码可视化需要掌握的基础理论，例如：AST生成、CFG和DFG等；</li>
+<li>实践部分会实现“<strong>CallGraph可视化</strong>”并提供基于Git Diff的代码影响变更分析功能；</li>
+<li>也会罗列一些业界已知的实践方案供大家参考学习。</li>
+</ul>
+<p>相关内容会逐步汇总到”代码可视化“书籍：<a href="https://code-visualization.shawnxie.top/" target="_blank" rel="noopener noreferrer">code-visualization-book</a>.</p>
+<div style="text-align: center;"> —— 完 —— </div>
+]]></content:encoded>
+      <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251311287.png" type="image/png"/>
+    </item>
+    <item>
+      <title>编译器前端&amp;中端基础知识</title>
+      <link>https://shawnxie.top/blogs/code-visualization/compiler.html</link>
+      <guid>https://shawnxie.top/blogs/code-visualization/compiler.html</guid>
+      <source url="https://shawnxie.top/rss.xml">编译器前端&amp;中端基础知识</source>
+      <description>编译器：将用编程语言(源语言)编写的计算机代码翻译成另一种语言(目标语言)的计算机程序。 编译程序以高级程序源代码作为输入，以汇编语言或机器语言表示的目标程序作为输出。目标程序会在机器上运行，得到所需的结果。编译器可能执行以下操作：预处理、词法分析、语法分析、语义分析、中间代码生成、代码优化和目标代码生成。 编译器前端和中端理论知识与代码可视化的实现最...</description>
+      <category>代码可视化</category>
+      <category>基础理论</category>
+      <pubDate>Sun, 12 May 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<blockquote>
+<p><a href="https://en.wikipedia.org/wiki/Compiler" target="_blank" rel="noopener noreferrer">编译器</a>：将用编程语言(源语言)编写的计算机代码翻译成另一种语言(目标语言)的计算机程序。</p>
+</blockquote>
+<p>编译程序以高级程序源代码作为输入，以汇编语言或机器语言表示的目标程序作为输出。目标程序会在机器上运行，得到所需的结果。编译器可能执行以下操作：预处理、词法分析、语法分析、语义分析、中间代码生成、代码优化和目标代码生成。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251345967.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>编译器前端和中端理论知识与代码可视化的实现最为相关，后端部分和目标机器代码、特定机器架构相关一般很少用到可视化中。</p>
+<!-- more -->
+<h2>编译器前端</h2>
+<h3>词法分析(Lexical Analysis，or Scanning)</h3>
+<p>词法分析又称扫描(scanning)，通过读入组成源程序的字符流，将它们组织成为有意义的词素(lexeme)的序列。词素是源程序中的最小语言单位，如关键字、标识符、常数、操作符和分隔符等。对于每个词素，词法分析器将产生对应的词法单元(token)作为输出。</p>
+<p><strong>token:&lt;种别码，属性值&gt;</strong></p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251347371.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>词法分析器的核心逻辑基于<a href="https://zh.wikipedia.org/wiki/%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA" target="_blank" rel="noopener noreferrer">有限自动机</a>（Finite Automata），可以理解为有限个状态的自动执行机器，用来将扫描得到的字符映射到有限个的可能性上。类型包括：</p>
+<ul>
+<li><strong>不确定性有限自动机（NFA）</strong>：在某状态和输入符号下可能存在多个可能的转移状态；</li>
+<li><strong>确定性有限自动机（DFA）</strong>：在任何状态和输入符号下都只有一个唯一的转移状态。</li>
+</ul>
+<p>整个自动构造过程见下图，大致了解一下即可，如果想深入学习各种算法细节可自行查阅资料。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251347654.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h4>使用Antlr词法分析</h4>
+<p>接下来我们练练手，使用Antlr对Java源码进行词法分析。<a href="https://www.antlr.org/" target="_blank" rel="noopener noreferrer">Antlr</a>是一个开源工具，支持根据规则文件生成词法分析器和语法分析器，它自身是用 Java 实现的，Mac上可以使用Homebrew安装或者直接使用idea插件<a href="https://plugins.jetbrains.com/plugin/7358-antlr-v4" target="_blank" rel="noopener noreferrer">antlr-v4</a>。同时<a href="https://github.com/antlr/grammars-v4" target="_blank" rel="noopener noreferrer">grammars-v4</a>上提供了很多供参考的规则，我们这里也直接使用其中针对Java8定义的词法分析规则练手。</p>
+<ul>
+<li>词法规则定义：<a href="https://github.com/antlr/grammars-v4/blob/master/java/java8/Java8Lexer.g4" target="_blank" rel="noopener noreferrer">Java8Lexer.g4</a></li>
+</ul>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>- 关键字定义</span></span>
+<span class="line"><span>ABSTRACT     : 'abstract';</span></span>
+<span class="line"><span>ASSERT       : 'assert';</span></span>
+<span class="line"><span>BOOLEAN      : 'boolean';</span></span>
+<span class="line"><span>BREAK        : 'break';</span></span>
+<span class="line"><span>BYTE         : 'byte';</span></span>
+<span class="line"><span>CASE         : 'case';</span></span>
+<span class="line"><span>CATCH        : 'catch';</span></span>
+<span class="line"><span>CHAR         : 'char';</span></span>
+<span class="line"><span>...</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>- 字符串字面量定义</span></span>
+<span class="line"><span>StringLiteral: '"' StringCharacters? '"';</span></span>
+<span class="line"><span>fragment StringCharacters: StringCharacter+;</span></span>
+<span class="line"><span>fragment StringCharacter: ~["\\\r\n] | EscapeSequence;</span></span>
+<span class="line"><span>...</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li>待解析的Java代码</li>
+</ul>
+<div class="language-java line-numbers-mode" data-highlighter="shiki" data-ext="java" data-title="java" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">public</span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD"> class</span><span style="--shiki-light:#C18401;--shiki-dark:#E5C07B"> HelloWorld</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> {</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> </span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">   public</span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD"> static</span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD"> void</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF"> main</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#C18401;--shiki-dark:#E5C07B">String</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">[] </span><span style="--shiki-light:#383A42;--shiki-light-font-style:inherit;--shiki-dark:#E06C75;--shiki-dark-font-style:italic">args</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">)</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> { </span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E5C07B">      System</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#E45649;--shiki-dark:#E5C07B">out</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">println</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"Hello, World"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">);</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">   }</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li>使用Antlr生成词法分析器并执行分析操作</li>
+</ul>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># ① 编译词法规则</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">antlr</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> Java8Lexer.g4</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> </span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># ② 编译上一步生成的java文件（注意需要把Antlr的JAR文件设置到CLASSPATH环境变量，否则会报错）</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">javac</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> Java8Lexer.java</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># ③ 调用生成的词法分析器获取分析结果</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">grun</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> Java8Lexer</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> tokens</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -tokens</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ./examples/helloworld.java</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251348903.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>语法分析（Syntactic Analysis, or Parsing）</h3>
+<p>语法分析又称解析（parsing），它在词法分析后执行。将tokens组织成语法结构，通常是一棵抽象语法树（Abstract Syntax Tree, AST），这棵树表示了源代码的语法结构。语法分析器需要根据一组预定义的语法规则来分析词法单元序列。这些规则通常以上<a href="https://zh.wikipedia.org/wiki/%E4%B8%8A%E4%B8%8B%E6%96%87%E6%97%A0%E5%85%B3%E6%96%87%E6%B3%95" target="_blank" rel="noopener noreferrer">下文无关文法</a>（Context-Free Grammar, CFG）的形式定义，其中每个规则定义了语言中的一个结构如何由其他结构组成。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251348344.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>这里先简单说一下CFG，如果想深入学习可以再查查资料。一个上下文无关文法由以下四个部分组成：</p>
+<ul>
+<li>① <strong>非终结符（Non-terminals）</strong>：这些是文法的变量，表示一组字符串的集合。它们通常用大写字母表示，如A,B,Expr等；</li>
+<li>② <strong>终结符（Terminals）</strong>：这些是文法的基本符号，它们构成了语言的字符串。在编程语言中，终结符可以是关键字、操作符、标识符等。它们通常用小写字母、数字或其他符号表示；</li>
+<li>③ <strong>产生式规则（Production rules）</strong>：这些规则定义了非终结符如何被终结符或其他非终结符的序列替换。规则的形式通常是A → B C，表示非终结符A可以被B C替换；</li>
+<li>④ <strong>开始符号（Start symbol）</strong>：这是一个特殊的非终结符，用于表示整个语言或文法的起始点。</li>
+</ul>
+<p>举个栗子：</p>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>S → a S b</span></span>
+<span class="line"><span>S → ε</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
+      <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251345967.png" type="image/png"/>
+    </item>
+    <item>
+      <title>想提高阅读代码的效率？试试这些工具吧！</title>
+      <link>https://shawnxie.top/blogs/code-visualization/read-code-tools.html</link>
+      <guid>https://shawnxie.top/blogs/code-visualization/read-code-tools.html</guid>
+      <source url="https://shawnxie.top/rss.xml">想提高阅读代码的效率？试试这些工具吧！</source>
+      <description>程序员间有句名言——“Talk is cheap, show me the code！”源码的确相较于言语更接近程序真实的状态，包含了更多的一手信息。因此，无论是刚开始学习代码的小白还是久经沙场的代码大神，不管是学习优秀的开源项目还是做老项目的重构，代码阅读都是开发者必备的技能之一。但在业务场景越来越复杂、迭代越来越快的背景下，提高梳理代码的效率能够极...</description>
+      <category>代码可视化</category>
+      <category>技术提效</category>
+      <pubDate>Sun, 26 May 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<p>程序员间有句名言——“Talk is cheap, show me the code！”源码的确相较于言语更接近程序真实的状态，包含了更多的一手信息。因此，无论是刚开始学习代码的小白还是久经沙场的代码大神，不管是学习优秀的开源项目还是做老项目的重构，代码阅读都是开发者必备的技能之一。但在业务场景越来越复杂、迭代越来越快的背景下，提高梳理代码的效率能够极大程度的提高开发人员的工作效率，进一步为业务创造新的价值。</p>
+<p>工欲善其事必先利其器，阅读代码也能通过工具来提升效率，本文将介绍3种代码阅读辅助工具，大家不妨在工作中试用一下，看看是否能带来实际帮助。</p>
+<!-- more -->
+<h2>工具</h2>
+<h3><a class="header-anchor" href="#source-insight"><span></span></a><a href="https://www.sourceinsight.com/" target="_blank" rel="noopener noreferrer">Source Insight</a></h3>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251329061.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>SI使用静态代码分析技术，提供了多个维度代码分析结果展示，对代码阅读、快速查找、代码分析和代码格式化都有帮助。可惜的是只支持Windows系统，Mac如果要使用需要安装虚拟机。</p>
+<p><strong>①代码可视化</strong>：提供各种图形可视化能力，包括继承关系图，CallGraph等；</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251329652.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>继承关系图</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251330947.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>CallGraph</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251330987.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p><strong>②代码检查</strong>：对于语法格式和样式进行检查；</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251330517.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p><strong>③代码探索</strong>：查看函数和变量的使用位置；</p>
+<p>自动显示对函数、变量、类等的引用，使用高级搜索功能在整个项目中进行搜索。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251331414.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p><strong>④对比分析</strong>：提供了多维度对比分析能力。</p>
+<ul>
+<li>文件对比</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251331930.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>目录对比</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251332499.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>还有其他功能，有兴趣的同学可以自行探索一下。</p>
+<h3><a class="header-anchor" href="#understand"><span></span></a><a href="https://scitools.com/" target="_blank" rel="noopener noreferrer">Understand</a></h3>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251332435.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>Understand使用静态代码分析技术，提供了多个维度的代码分析结果展示，其核心功能和SI类似但更丰富，而且工具易用性更好，也支持多种操作系统。</p>
+<p><strong>①代码可视化</strong>：提供各种图形可视化能力，包括依赖关系图，CallGraph，CFG、UML等等；</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251332494.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>控制流程图（CFG）</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251333764.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>CallGraph</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251333617.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>UML</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251333496.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>更多可视化图形介绍可参考：<a href="https://blog.scitools.com/graphlist/" target="_blank" rel="noopener noreferrer">Interesting Graphs about Your Code﻿</a></p>
+<p><strong>②代码检查</strong>：使用行业、通用或定制化的标准来检查代码，保证其安全、整洁，可用；</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251333887.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p><strong>③代码量化</strong>：使用各种指标对代码进行度量，如：圈复杂度、度量树状图等度量图表；<br>
+度量树状图中的每个块都代表代码中的一个文件、类或函数。图块的大小和颜色渐变各不相同，以区分度量指标的程度。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251334441.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>度量图表可提供整个项目的信息，包括最复杂和最大的函数、类和文件等。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251334411.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p><strong>④代码探索</strong>：使复杂的代码关系变得简单；<br>
+提供了便捷的搜索功能，能够快速查找及定位指定的标识符。对于函数，可查看返回类型、参数和引用列表，点击后可立即进入该实例。对于类可查看成员变量和函数、包含列表以及相关指标。还可以通过信息浏览窗口或右键单击代码中任何已命名的实体来访问图表。使用蝴蝶图可以快速查看调用或被调用特定函数的所有内容。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251334245.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p><strong>⑤代码变更分析</strong>：快速查看两个项目代码之间的差异。<br>
+可以按文件、文件夹、实体或架构维度查看变更。只需要指定要对比的git版本或要对比的两个数据库，便可以以文本或树形图对比的形式查看变更情况。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251335732.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>还有其他很多功能，有兴趣的同学可以自行探索一下。</p>
+<h3><a class="header-anchor" href="#source-trail"><span></span></a><a href="https://github.com/CoatiSoftware/Sourcetrail" target="_blank" rel="noopener noreferrer">Source Trail</a></h3>
+<p>Sourcetrail是一款开源免费的跨平台源码分析工具，可在阅读源代码时提高效率。提供了按脑图形式展示的函数调用链路。在分析代码的同时，提供了优雅的图形化界面来展示工程项目中的各类标识符信息和链路图，能够让人更为直观地了解整个工程的调用信息。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251335890.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>总结</h2>
+<p>| 工具 | 功能丰富 | 易用性 | 费用 | 支持操作系统 | 维护情况 |<br>
+|</p>
+]]></content:encoded>
+      <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251329061.png" type="image/png"/>
+    </item>
+    <item>
+      <title>看不懂正则表达式？试试可视化工具吧！</title>
+      <link>https://shawnxie.top/blogs/code-visualization/regex-vis.html</link>
+      <guid>https://shawnxie.top/blogs/code-visualization/regex-vis.html</guid>
+      <source url="https://shawnxie.top/rss.xml">看不懂正则表达式？试试可视化工具吧！</source>
+      <description>正则表达式是一种用来匹配字符串的强有力工具。它的设计思想是用一种描述性的语言来给字符串定义一个规则，凡是符合规则的字符串我们就认为它“匹配”了，否则该字符串就是不合法的。 日常开发中常常会使用正则表达式，例如：对数据格式进行校验（判断一个字符串是否是合法的Email格式、合法的IP格式或是否按照特定格式的数字和字母拼接）；又或是将日志详情按照某种格式匹...</description>
+      <category>代码可视化</category>
+      <category>技术提效</category>
+      <pubDate>Sun, 26 May 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<blockquote>
+<p><a href="https://zh.wikipedia.org/zh-cn/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F" target="_blank" rel="noopener noreferrer">正则表达式</a>是一种用来匹配字符串的强有力工具。它的设计思想是用一种描述性的语言来给字符串定义一个规则，凡是符合规则的字符串我们就认为它“匹配”了，否则该字符串就是不合法的。</p>
+</blockquote>
+<p>日常开发中常常会使用正则表达式，例如：对数据格式进行校验（判断一个字符串是否是合法的Email格式、合法的IP格式或是否按照特定格式的数字和字母拼接）；又或是将日志详情按照某种格式匹配后采集上报。复杂的正则表达式可读性很差，对地球人来说掌握比较困难，下定决心系统的学习后又会很快的忘记。在有大模型辅助编程前，如果要写一个复杂的正则表达式可能需要花费不少精力搜索资料和验证，有了大模型帮忙确实可以大大简化书写的过程。但不管是之前还是现在，可能对正则表达式执行的正确性仍不太确定（大模型也可能给出错误的结果或者由于描述不准确导致给出不符合预期的结果），这时候如果能对正则表达式可视化的分析，那么将大大增加使用的信心。</p>
+<!-- more -->
+<h2>工具推荐</h2>
+<h3>简介</h3>
+<p><a href="https://github.com/Bowen7/regex-vis" target="_blank" rel="noopener noreferrer">regex-vis</a>是一个辅助学习、编写和验证正则的工具，输入一个正则表达式后，会生成它的可视化图形。然后可以点选或框选图形中的单个或多个节点，再在右侧操作面板对其进行操作，具体操作取决于节点的类型，比如在其右侧插入空节点、为节点编组、为节点增加量词等。项目开源，可以拉取代码到本地编译执行，也可以直接在<a href="https://regex-vis.com/" target="_blank" rel="noopener noreferrer">regex-vis.com</a>体验它的功能。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251322057.gif" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>原理</h3>
+<p>通过词法分析和语法分析将一个正则表达式转换为 AST(Abstract Syntax Tree)。其中词法分析将正则字符串转为 Tokens，Tokens 再通过语法分析转为 AST。实现源码参考<a href="https://github.com/Bowen7/regex-vis/tree/master/src/parser" target="_blank" rel="noopener noreferrer">Parser</a>。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251319865.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>举例</h3>
+<p>下面列举一些常用的正则表达式和对应的可视化图，点击小标题超链接可以直接跳转到RegexVis页面查看。</p>
+<h4><a class="header-anchor" href="#_1-邮箱"><span>① </span></a><a href="https://regex-vis.com/?r=%5E%5Ba-zA-Z0-9_-%5D%2B%40%5Ba-zA-Z0-9_-%5D%2B%28%5C.%5Ba-zA-Z0-9_-%5D%2B%29%2B%24&amp;e=0" target="_blank" rel="noopener noreferrer">邮箱</a></h4>
+<p>只允许英文字母、数字、下划线、英文句号、以及中划线组成。</p>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251319181.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h4><a class="header-anchor" href="#_2-域名"><span>② </span></a><a href="https://regex-vis.com/?r=%5E%28%28http%3A%5C%2F%5C%2F%29%7C%28https%3A%5C%2F%5C%2F%29%29%3F%28%5Ba-zA-Z0-9%5D%28%5Ba-zA-Z0-9%5C-%5D%7B0%2C61%7D%5Ba-zA-Z0-9%5D%29%3F%5C.%29%2B%5Ba-zA-Z%5D%7B2%2C6%7D%28%5C%2F%29&amp;e=0" target="_blank" rel="noopener noreferrer">域名</a></h4>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>^((http:\/\/)|(https:\/\/))?([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}(\/)</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251320148.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h4><a class="header-anchor" href="#_3-ip"><span>③ </span></a><a href="https://regex-vis.com/?r=%28%28%3F%3A%28%3F%3A25%5B0-5%5D%7C2%5B0-4%5D%5Cd%7C%5B01%5D%3F%5Cd%3F%5Cd%29%5C.%29%7B3%7D%28%3F%3A25%5B0-5%5D%7C2%5B0-4%5D%5Cd%7C%5B01%5D%3F%5Cd%3F%5Cd%29%29&amp;e=0" target="_blank" rel="noopener noreferrer">IP</a></h4>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>((?:(?:25[0-5]|2[0-4]\d|[01]?\d?\d)\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d?\d))</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251320467.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h4><a class="header-anchor" href="#_4-url"><span>④ </span></a><a href="https://regex-vis.com/?r=%5Ehttps%3F%3A%5C%2F%5C%2F%28www%5C.%29%3F%5B-a-zA-Z0-9%40%3A%25._%5C%2B%7E%23%3D%5D%7B2%2C256%7D%5C.%5Ba-z%5D%7B2%2C6%7D%5Cb%28%5B-a-zA-Z0-9%40%3A%25_%5C%2B.%7E%23%28%29%3F%26%2F%2F%3D%5D*%29%24&amp;e=0" target="_blank" rel="noopener noreferrer">URL</a></h4>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#()?&amp;//=]*)$</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251321241.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h4><a class="header-anchor" href="#_5-html标签"><span>⑤ </span></a><a href="https://regex-vis.com/?r=%5E%3C%28%5Ba-z%5D%2B%29%28%5B%5E%3C%5D%2B%29*%28%3F%3A%3E%28.*%29%3C%5C%2F%5C1%3E%7C%5Cs%2B%5C%2F%3E%29%24&amp;e=0" target="_blank" rel="noopener noreferrer">HTML标签</a></h4>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>^&lt;([a-z]+)([^&lt;]+)*(?:&gt;(.*)&lt;\/\1&gt;|\s+\/&gt;)$</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251321250.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>扩展阅读</h2>
+<ul>
+<li><a href="https://deerchao.cn/tutorials/regex/regex.htm" target="_blank" rel="noopener noreferrer">正则表达式30分钟入门教程</a></li>
+<li><a href="https://learn.microsoft.com/zh-cn/dotnet/standard/base-types/regular-expression-language-quick-reference?redirectedfrom=MSDN" target="_blank" rel="noopener noreferrer">正则表达式语言 - 快速参考</a></li>
+<li><a href="https://github.com/cdoco/common-regex" target="_blank" rel="noopener noreferrer">常用正则表达式</a></li>
+<li><a href="https://tool.oschina.net/uploads/apidocs/jquery/regexp.html" target="_blank" rel="noopener noreferrer">正则表达式手册</a></li>
+</ul>
+<div style="text-align: center;"> —— 完 —— </div>
+]]></content:encoded>
+      <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251322057.gif" type="image/gif"/>
+    </item>
+    <item>
       <title>龙年（2024）总结：折腾</title>
       <link>https://shawnxie.top/blogs/talk/2024-end.html</link>
       <guid>https://shawnxie.top/blogs/talk/2024-end.html</guid>
@@ -462,9 +787,9 @@
 <p>合集传送门👉🏻：<a href="https://mp.weixin.qq.com/s/q9MAebCSH_9FCbkhIAibZw" target="_blank" rel="noopener noreferrer">2024年周刊合集（01期 - 30期）：AI！AI！还是XX的AI！</a></p>
 <figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302324791.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h4>写博文</h4>
-<p>2024年撰写博文<strong>19</strong>篇，很好的锻炼了写作能力。</p>
-<p>随笔合集：<a href="https://github.com/Xiaoxie1994/suibi" target="_blank" rel="noopener noreferrer">https://github.com/Xiaoxie1994/suibi</a></p>
-<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304346.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>2024年撰写博文<strong>14</strong>篇，很好的锻炼了写作能力。</p>
+<p>时间线：<a href="https://shawnxie.top/timeline/" target="_blank" rel="noopener noreferrer">https://shawnxie.top/timeline/</a></p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251406530.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h4>写书籍</h4>
 <p>书籍比起博文能更全面的梳理自己的知识体系，发现更多知识盲点。24年开了一本书的坑，目前仅完成大纲和部分内容。</p>
 <p>尝鲜阅读：<a href="https://code-visualization.shawnxie.top/" target="_blank" rel="noopener noreferrer">https://code-visualization.shawnxie.top/</a></p>
@@ -575,25 +900,29 @@
 <p>举办了7场家庭读书会（各种原因没能完成一年12次的目标），进行了多次思想上的碰撞，不仅增长了知识也促进了家人之间的了解，真的是非常不错的活动。但由于已经举办三年了，逐渐开始出现边际效益，是时候调整一下流程了。</p>
 <figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232302643.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h3>影视</h3>
+<p>24年就去了1次电影院，看了“<strong>沙丘2</strong>”，画质和音乐还是一如既往的优秀，可惜剧情有点无语。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251418532.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>平常就刷刷B站，看看下饭视频。</p>
 <figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304354.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h3>音乐</h3>
 <figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304355.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h3>演唱会</h3>
 <p>告五人重庆演唱会，超嗨！</p>
-<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304356.png" alt="" loading="lazy"><br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304357.png" alt="" loading="lazy"><br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304358.png" alt="" loading="lazy"></p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304356.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304357.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304358.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h3>旅行</h3>
-<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304359.png" alt="" loading="lazy"><br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304360.png" alt="" loading="lazy"><br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304361.png" alt="" loading="lazy"><br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304362.png" alt="" loading="lazy"><br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304363.png" alt="" loading="lazy"><br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304364.png" alt="" loading="lazy"><br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304365.png" alt="" loading="lazy"><br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304366.png" alt="" loading="lazy"><br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304367.png" alt="" loading="lazy"><br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304368.png" alt="" loading="lazy"></p>
+<p>媳妇怀孕，24年基本只在成都周边转转。<br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304359.png" alt="" loading="lazy"></p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304360.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304361.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304362.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304363.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304364.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304365.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304366.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304367.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304368.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h3>游戏</h3>
 <p>24年游戏玩的不多，除了黑神话其他都是一些休闲小游戏。25年mhw2要发售了，游戏时间应该会增加不少。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304369.png" alt="" loading="lazy"><br>
@@ -607,6 +936,138 @@
 <div style="text-align: center;"> —— 完 —— </div>
 ]]></content:encoded>
       <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232304342.png" type="image/png"/>
+    </item>
+    <item>
+      <title>工作五年小结 | 面对不确定性快速上升的外部环境，我们该如何寻求突破？</title>
+      <link>https://shawnxie.top/blogs/talk/5-years-summarize.html</link>
+      <guid>https://shawnxie.top/blogs/talk/5-years-summarize.html</guid>
+      <source url="https://shawnxie.top/rss.xml">工作五年小结 | 面对不确定性快速上升的外部环境，我们该如何寻求突破？</source>
+      <description>工作五年了，来京东马上满一年，前四年在开水团，不禁感叹时间过的真快啊！回想19年从西安交大硕士毕业孤身前往北京开始职业生涯，经历了孤独迷茫到自立坚定，再到23年下定决心携妻还蜀安家，并来到京东开始新的征程，这5年过的很快也很充实。 今年也是我的而立之年，感觉一迈过这个坎，眼前的世界就不一样了，事业上还未成气候，更多的生活琐事就开始扑面而来。网上有段子笑...</description>
+      <category>肖恩杂谈</category>
+      <pubDate>Sat, 07 Sep 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<p>工作五年了，来京东马上满一年，前四年在开水团，不禁感叹时间过的真快啊！回想19年从西安交大硕士毕业孤身前往北京开始职业生涯，经历了孤独迷茫到自立坚定，再到23年下定决心携妻还蜀安家，并来到京东开始新的征程，这5年过的很快也很充实。</p>
+<p>今年也是我的而立之年，感觉一迈过这个坎，眼前的世界就不一样了，事业上还未成气候，更多的生活琐事就开始扑面而来。网上有段子笑称现代的“五子登科”中的五子分别指的是“车子、票子、房子、妻子和孩子”，这个词本来表达的是人们对美好生活的向往，但旧词新义体现更多的是中年人的无奈。</p>
+<!-- more -->
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251156351.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>英国物理学家霍金曾说“<strong>21世纪将是复杂性的世纪</strong>”，科学的事我不懂，但我的直观感受是各行各业的复杂性都在持续的上涨且很快。就程序员这个职业来说，面试的难度是越来越大，当然面试可能存在一定的造火箭行为，但工作整体的难度确实是在逐年上涨。举个例子，之前业务开发主要工作是完成需求编码，而且由于很多都是新开业务也不存在太多历史债务，工作的条线和职责比较清晰。但随着业务进入成熟期，增长变缓导致更多的运维负担和质量问题开始凸显，开发不仅要完成基本的编码，也需要参与到更多<strong>运维监控和质量保障</strong>工作中，这使得工作的内容变得复杂多样，认知负载极速增加。而且就算是基本的编码工作，为了保证能适应未来发展趋势也会在前期投入更多精力进行方案设计，越来越考验开发的知识储备和架构思维。</p>
+<p>同时新的技术在不断地出现并对我们的工作造成实际的影响，从2022年12月OpenAi发布<strong>ChatGPT</strong>至今不到两年时间里，大模型已经侵入到了生活中的方方面面。哪个程序员敢说自己完全没有用过大模型，基于大模型衍生的编码辅助、智能问答、内容&amp;图片生成等工具真真切切的影响到了我们工作的方式。开发已然变成了一个<strong>复合型职业</strong>，对个人能力提出了更高要求。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251157081.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>外部环境的走向不是个人能够左右的，因此我不聊公司或城市的差异，也不聊如何和生活琐事对线，仅仅聊一下“<strong>个人成长</strong>”，因为这个话题的主动权掌握在我们自己手上，最好的投资就是投资自己（想到A股😭）。那么在这个复杂性快速上升的21世纪，面对不确定性上升的外部环境，我们该如何寻求突破呢？我当前的答案是：<strong>持续学习，制造正反馈，相信复利效应。</strong></p>
+<h2>收获</h2>
+<h3>业务理解</h3>
+<p>目前参与的业务方向具有保密性质并逐渐进入成熟期，系统架构也逐渐趋于稳定，日常的工作内容更多投入在技术支持、运维监控和质量保障上，系统功能迭代频率下降，部分开发精力投入在提效工具建设上。由于项目保密性质，这里就不展开说明业务上的具体工作内容，仅对如何快速了解业务知识和熟悉系统代码进行总结。</p>
+<h4>了解业务</h4>
+<p>我学习业务知识的基本思路是“<strong>读-&gt;想-&gt;写-&gt;讲</strong>”四步循环，下面是具体的执行步骤，其中步骤2→6我会多跑几轮，逐渐建立起深入的业务认识。</p>
+<ul>
+<li><strong>① 信息收集</strong>：尽可能检索业务和系统相关的文档、分享视频、代码和配置数据等；</li>
+<li><strong>② 信息整合</strong>：从用户视角出发串联业务流程，并将流程拆分成独立的功能模块。整合不仅仅聚焦于负责的业务，也要考虑到上下游；</li>
+<li><strong>③ 功能细化</strong>：针对业务各个模块进行细化，包含模块主要功能、输入输出定义和交互中间件等，思路可以参考<a href="https://www.infoq.cn/article/c4-architecture-model" target="_blank" rel="noopener noreferrer">C4模型</a>；</li>
+<li><strong>④ 文档沉淀</strong>：将理解的内容整理成文档，从背景、名词、现状、未来发展等方面进行叙述，串联业务和系统整个生命周期；</li>
+<li><strong>⑤ 业务串讲</strong>：将总结的内容分享出来，并收集熟悉业务听众的反馈（收集反馈很重要，老同事能够指出难以发现的细枝末节并分享一些历史原因导致的设计缺陷）；</li>
+<li><strong>⑥ 认知迭代</strong>：基于新的输入重新迭代自己的业务认知。</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251157679.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h4>熟悉代码</h4>
+<p>可以找之前负责的同事领读，不过这种方式只能对项目有一个大致的认识，具体的细节很难面面俱到。熟悉代码没有捷径，只能通过阅读代码，但阅读代码是有方法的。关于如何高效阅读代码我还没有总结出一套完整的方案，不过大体的思路是<strong>方法+工具</strong>结合方式：从系统入口开始，结合业务完整跑通核心链路，若有不懂的逻辑可以使用debug或代码分析工具，边读边做好笔记，并最好进行一次代码串讲收集反馈。下面推荐一些经验总结：</p>
+<ul>
+<li>
+<p><strong>① 阅读代码方法</strong>：<a href="https://www.thoughtworks.com/zh-cn/insights/blog/careers-at-thoughtworks/how-to-read-code" target="_blank" rel="noopener noreferrer">如何阅读代码</a>、<a href="https://stackoverflow.blog/2022/08/15/how-to-interrogate-unfamiliar-code/" target="_blank" rel="noopener noreferrer">how-to-interrogate-unfamiliar-code</a>、<a href="https://catcoding.me/p/learn-from-source-code/" target="_blank" rel="noopener noreferrer">如何高效阅读源代码</a></p>
+</li>
+<li>
+<p><strong>② 阅读代码工具</strong>：<a href="https://www.shawnxie.top/archives/1716733748336" target="_blank" rel="noopener noreferrer">想提高阅读代码的效率？试试这些工具吧！</a></p>
+</li>
+</ul>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251158633.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>不过工具和方法永远不是最重要的，<strong>去读</strong>，并在遇到困难的时候，看不明白的时候，咬牙坚持下去，抽丝剥茧，逐个击破。</p>
+<h3>技术提升</h3>
+<p>技术能力是开发的立足之本，因此前言中提到的寻求突破更多指的是技术能力上的突破，提升的方法我采取三步走：<strong>持续学习，制造正反馈，相信复利效应。</strong></p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251158351.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h4>持续学习</h4>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251158538.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>为什么需要持续学习，说白了是为了适应社会发展和保持个人竞争力，只出不进，我们将很快达到能力瓶颈。</p>
+<ul>
+<li><strong>应对快速变化的世界</strong>：世界经济论坛2020年的<a href="https://www.weforum.org/publications/the-future-of-jobs-report-2020/" target="_blank" rel="noopener noreferrer">一份报告</a>说到 2025 年，员工执行工作所需的 44% 的技能将因快速的技术进步而改变。持续学习可以帮助我们跟上这些变化，不被时代淘汰。</li>
+<li><strong>个人成长与发展</strong>：通过持续学习，我们可以扩展自己的知识面，有朝一日也会运用到工作中去解决问题。</li>
+<li><strong>保持心理健康</strong>：持续学习有助于保持大脑活跃，预防认知衰退，并且可以带来心理上的满足感和幸福感，扩展阅读“<a href="https://36kr.com/p/2857916221541250" target="_blank" rel="noopener noreferrer">锻炼大脑，这里有一套全指南</a>”。</li>
+</ul>
+<h4>制造正反馈</h4>
+<p>正反馈能提供持续学习的动力，适当的正反馈也有利于习惯的培养。我目前通过分享来获得正反馈，分享带来的阅读量、评论、点赞和收藏都会促使我继续学习并分享，而且反馈中的建议也很宝贵，能够指出我的知识盲区。目前保持了两个分享习惯：</p>
+<ul>
+<li><strong>每月在内部社区发表一篇文章（部分已同步外网）</strong></li>
+</ul>
+<p>要特别感谢公司神灯社区，从去年10月发布第一篇文章开始，我基本保持一月一篇的频率，神灯社区的互动和积分给我带来了大量的正反馈，提供了我持续学习的动力ღ( ´･ᴗ･` )。</p>
+<p>|   |   |<br>
+|</p>
+]]></content:encoded>
+      <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251156351.png" type="image/png"/>
+    </item>
+    <item>
+      <title>现在才开始探索个人IP是不是晚了？</title>
+      <link>https://shawnxie.top/blogs/talk/ip-exploration.html</link>
+      <guid>https://shawnxie.top/blogs/talk/ip-exploration.html</guid>
+      <source url="https://shawnxie.top/rss.xml">现在才开始探索个人IP是不是晚了？</source>
+      <description>现在才开始探索个人IP是不是晚了？ 现在开始探索个人IP是不是晚了？这赛道已经是一片红海了，前两年大量出现的离职博主，到如今很多也开始老老实实回去上班了。如果把个人IP当做自己的主业并想快速通过它赚米，那确实难如登天（头部效应很明显，平台可能都不会给新人多少流量）。但如果把打造IP看成一件长期的事，在维持一份基本的工作之外，不急功近利，慢慢打磨内容，降...</description>
+      <category>肖恩杂谈</category>
+      <pubDate>Thu, 12 Sep 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<p>现在开始探索个人IP是不是晚了？这赛道已经是一片<strong>红海</strong>了，前两年大量出现的<strong>离职博主</strong>，到如今很多也开始老老实实回去上班了。如果把个人IP当做自己的主业并想快速通过它赚米，那确实难如登天（头部效应很明显，平台可能都不会给新人多少流量）。但如果把打造IP看成一件<strong>长期的事</strong>，在维持一份基本的工作之外，不急功近利，慢慢打磨内容，降低预期后或许能得到意想不到的收获（但行好事莫问前程？<strong>食饼</strong>🤡）。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251247185.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>我在MT、JD等互联网公司干了5年后端开发，磨炼了设计和实现复杂业务系统的能力。大规模互联网项目的经验不仅提高了我的技术洞察力，也丰富了我对互联网应用多样性的理解。但大公司同样也对我的发展有了一些限制，我不愿意走业务架构或者技术管理的路线，领导给我的规划却往往是这样，因为大多数的场景还是更重业务属性，这条路会容易些。但<strong>与其还没有挣扎就接受命运，我更愿意尝试后死的明明白白</strong>。</p>
+<p>俗话说“<strong>种一棵树最好是十年前其次是现在</strong>”，做个人IP更多是想探索自我的可能性。如果职业生涯一眼就能望到头（还有35岁这道坎），通过阅读、学习、分享和交流拓宽认知边界，是否可以走出一条不同的路？我在"<strong><a href="https://mp.weixin.qq.com/s?__biz=MzkwODY0ODQzOQ==&amp;mid=2247484279&amp;idx=1&amp;sn=be672baa85c0179e61ff0af5a42c54cd&amp;scene=21#wechat_redirect" title="工作五年小结 | 面对不确定性快速上升的外部环境，我们该如何寻求突破？" target="_blank" rel="noopener noreferrer">工作五年小结 | 面对不确定性快速上升的外部环境，我们该如何寻求突破？</a></strong>"一文中提到在这个复杂性快速上升的21世纪，面对不确定性上升的外部环境，我们该如何寻求突破呢？我的答案是：<strong>持续学习，制造正反馈，相信复利效应</strong>。因此做个人IP没有风险，这只是践行理论的一种方式，相信只要坚持就会有回报，只是多少的差异而已（<strong>再食饼</strong>🤡）。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251158351.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>搞什么内容？</h2>
+<p>说服自己只是第一步，肚子里没墨水也白瞎。其实去年我就萌生了这个想法，并于10月开始写技术博文，并把日常见闻和点滴想法进行记录。同时进行了高强度检索，了解其他个人IP都在干什么，哪些有借鉴意义。最近得到一个结论“<strong>要在擅长的、感兴趣的和能满足大众需求的交集里做文章</strong>”，这是完美副业的样子。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251248675.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>内容首先得从“<strong>擅长</strong>”出发，因为擅长才更容易出良品，好的内容是个人IP的核心竞争力。接着是“<strong>感兴趣</strong>”，只有做起来有乐趣的事情才容易长久，这是保证持续精进的原动力。最后是“<strong>能满足大众需求</strong>”，这一点决定了IP的价值，不能满足大众的需求则永远都是自娱自乐。</p>
+<p>|擅长|兴趣|需求|<br>
+|</p>
+]]></content:encoded>
+      <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251247185.png" type="image/png"/>
+    </item>
+    <item>
+      <title>离开工位老是忘记锁屏？试着让电脑自动完成这事吧！</title>
+      <link>https://shawnxie.top/blogs/tools/auto-lock.html</link>
+      <guid>https://shawnxie.top/blogs/tools/auto-lock.html</guid>
+      <source url="https://shawnxie.top/rss.xml">离开工位老是忘记锁屏？试着让电脑自动完成这事吧！</source>
+      <description>公司要求离开工位要立刻锁定电脑屏幕防止信息泄露，但无论是使用锁屏快捷键还是设置触发角，总感觉不得劲。想想汽车现在基本都是自动锁车了，电脑它就不能自己锁屏吗？于是抽空搜罗了一些自动化的解决方案，并按照Win和Mac进行分类。</description>
+      <category>技术提效</category>
+      <pubDate>Sun, 26 May 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<p>公司要求离开工位要<strong>立刻</strong>锁定电脑屏幕防止信息泄露，但无论是使用锁屏快捷键还是设置触发角，总感觉不得劲。想想汽车现在基本都是自动锁车了，电脑它就不能自己锁屏吗？于是抽空搜罗了一些自动化的解决方案，并按照Win和Mac进行分类。</p>
+<!-- more -->
+<h2>配置方式</h2>
+<h3>Windows</h3>
+<p>Windows官方系统就支持“动态锁”，其通过检测和电脑配对的蓝牙设备距离来触发操作，当蓝牙配对设备低于最大接收信号强度指示器 (RSSI) 值时，会自动锁定 Windows 设备。不过此功能仅当蓝牙信号下降且系统处于空闲状态时，动态锁定功能才会锁定设备，也就说如果有人在你刚离开就操作电脑就不能生效😂。<br>
+<strong>如何设置自动锁屏</strong></p>
+<ol>
+<li>使用蓝牙将你的手机与电脑配对；</li>
+<li>进入「设置」→「账户」→「登录选项」→「动态锁」（或者直接在设置中搜索“动态锁”）；</li>
+<li>勾选「允许 Windows 在你离开时自动锁定设备」前的复选框。</li>
+</ol>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251211203.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>官方文档“<a href="https://support.microsoft.com/zh-cn/windows/%E7%A6%BB%E5%BC%80windows%E8%87%AA%E5%8A%A8%E9%94%81%E5%AE%9A%E7%94%B5%E8%84%91-d0a5f536-74ac-0859-820a-4140dac9fcaf" target="_blank" rel="noopener noreferrer">离开Windows自动锁定电脑</a>”中对锁定场景的描述是“走出蓝牙覆盖范围约1分钟后自动锁定电脑”，这一点对于需要立即触发锁定的场景不太友好。但在我实际测试中发现只要设备远离到一定程度就会自动锁定，后续官方应该有更新但文档并未同步。</p>
+<p>之后从文档“<a href="https://learn.microsoft.com/zh-cn/windows/security/identity-protection/hello-for-business/hello-feature-dynamic-lock" target="_blank" rel="noopener noreferrer">动态锁</a>”中看到目前可以配置动态锁定因素，目前默认的配置如下：<strong>rssiMin</strong>属性值信号指示设备被视为在范围内所需的强度，默认值-10；<strong>rssiMaxDelta</strong>的默认值-10为，超过度量值后锁定设备。RSSI测量值是相对值，会随两台配对设备之间信号的减弱而降低。测量值0强于-10，-10强于-60，-60表示设备正在相互远离，这个描述可以简单理解为在RSSI[-60,0]范围内不会锁定设备，超过之后自动锁定。一般这个设置足够使用了，去上个厕所的距离大多超过了这个范围。</p>
+<div class="language-xml line-numbers-mode" data-highlighter="shiki" data-ext="xml" data-title="xml" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">rule</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> schemaVersion</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"1.0"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">  &lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">signal</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> type</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"bluetooth"</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> scenario</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"Dynamic Lock"</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> classOfDevice</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"512"</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> rssiMin</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"-10"</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> rssiMaxDelta</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"-10"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">/&gt;</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">rule</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3>Mac</h3>
+<p>Mac的设置方式则根据你是否拥有苹果设备和是否愿意有一定花销分成了不同的方式：</p>
+<h4>有苹果设备且愿意花点小钱</h4>
+<p>如果你有苹果设备，那么可以通过下载<a href="https://nearlock.me/" target="_blank" rel="noopener noreferrer">Near Lock</a>应用实现丝滑的锁屏&amp;解锁动作。不过软件虽然可以免费下载使用，但想要在 iPhone 锁定的时候仍然可以使用距离感应来解锁 Mac电脑的话，是需要付费的（这一点挺适合花点小钱提高生活品质的朋友）。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251211407.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p><strong>如何设置自动锁屏</strong><br>
+分别在 iPhone 和 Mac 上安装好 Near Lock 以后，接下来便可以进入配对操作了。首先请分别在 iPhone 和 Mac 上打开 Near Lock 应用，随后请等待它们之间的配对识别。如下图所示，当 Mac 上的 Near Lock 识别到附近的 iPhone 设备以后，会在 Mac 电脑上显示。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251211050.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>突然想起本人没有苹果移动设备😭，手机端的配置就不展示了，大家可以自己下载试一试。类似的软件还有MacID（收费）。</p>
+<h4>没有苹果设备或一毛不拔</h4>
+<p>如果你啥苹果设备都没有或者就是不想花钱，那么可以使用<a href="https://github.com/ts1/BLEUnlock" target="_blank" rel="noopener noreferrer">BLEUnlock</a>这款开源软件实现自动解/锁屏。其原理是通过检测蓝牙设备的距离来控制解/锁屏，使用时蓝牙设备无需安装任何应用程序。当蓝牙设备靠近 Mac 电脑时，自动解锁屏幕并唤醒电脑；而当蓝牙设备远离时，自动锁定屏幕并暂停播放音乐/视频。</p>
+<figure><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251212133.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>尝试了一下，此软件对苹果设备的蓝牙支持更好，其他品牌的设备存在识别不够灵敏的情况，大家可以用自己的手机或者手环试一试。网上也有一些相关的设置教程，如：<a href="https://juejin.cn/post/6964669944327831560?from=search-suggest" target="_blank" rel="noopener noreferrer">小米手环解锁MacOS系统笔记本MacBookPro</a>。</p>
+<p>看到最后是不是觉得还是锁屏快捷键更便利（想想汽车就算有自动锁车还是会人工确认一遍😂，主打一个安心），那就从现在开始养成习惯吧，形成肌肉记忆后锁屏就和呼吸一样自然了，哈哈。</p>
+<div style="text-align: center;"> —— 完 —— </div>
+]]></content:encoded>
+      <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501251211203.png" type="image/png"/>
     </item>
     <item>
       <title>自建Docker镜像代理加速</title>
