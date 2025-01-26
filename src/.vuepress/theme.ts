@@ -103,7 +103,6 @@ export default hopeTheme({
     components: {
       components: ["Badge", "VPCard"],
     },
-
     icon: {
       prefix: "fa6-solid:",
     },
@@ -116,6 +115,13 @@ export default hopeTheme({
           placeholder: '搜索',
         }
       },
+    },
+    comment: {
+      provider: "Giscus",
+      repo: "Xiaoxie1994/suibi",
+      repoId: "R_kgDOMsmo_w",
+      category: "Announcements",
+      categoryId: "DIC_kwDOMsmo_84CmWI9",
     },
   },
 });
