@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b912011d6197644f",
+        "id": "2be9d5d9a686b92c",
         "type": "tabs",
         "children": [
           {
-            "id": "240cf58f8648df7e",
+            "id": "2c7259328c2ef4e0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "src/blogs/talk/2024-end.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2024-end"
+              "title": "新标签页"
             }
           }
         ]
@@ -151,8 +147,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-file",
+              "title": "插件不再活动"
             }
           }
         ],
@@ -175,24 +171,26 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "240cf58f8648df7e",
+  "active": "2c7259328c2ef4e0",
   "lastOpenFiles": [
+    "src/blogs/code-visualization/cg-diff.md",
     "src/blogs/code-visualization/code-visualization-intro.md",
     "src/blogs/code-visualization/compiler.md",
-    "src/blogs/code-visualization/read-code-tools.md",
-    "src/blogs/code-visualization/regex-vis.md",
-    "src/blogs/code-visualization/README.md",
-    "src/blogs/code-visualization/1.gif",
-    "src/blogs/ai/kimi.md",
-    "src/blogs/ai/README.md",
-    "src/blogs/ai/ai-agent.md",
-    "src/blogs/ai/ai-search.md",
-    "src/blogs/tools/docker-proxy.md",
-    "src/blogs/tools/auto-lock.md",
-    "src/blogs/tools/mac-terminal.md",
     "src/blogs/talk/2024-end.md",
     "src/blogs/talk/5-years-summarize.md",
+    "src/blogs/ai/ai-search.md",
+    "src/blogs/code-visualization/read-code-tools.md",
+    "src/blogs/ai/ai-hotspot.md",
+    "src/blogs/code-visualization/regex-vis.md",
+    "src/blogs/tools/auto-lock.md",
+    "src/blogs/tools/docker-proxy.md",
+    "src/blogs/tools/mac-terminal.md",
+    "src/blogs/code-visualization/README.md",
     "src/blogs/talk/ip-exploration.md",
+    "src/blogs/ai/kimi.md",
+    "src/blogs/ai/ai-agent.md",
+    "src/blogs/code-visualization/1.gif",
+    "src/blogs/ai/README.md",
     "src/blogs/talk/README.md",
     "2024-09-12.md",
     "src/blogs/tools/picture-manage.md",
@@ -203,8 +201,6 @@
     "src/blogs/history/README.md",
     "src/blogs/code-visualization",
     "src/blogs/未命名.md",
-    "src/blogs/README.md",
-    "README.md",
     "article/image.png",
     "article/image-8.png",
     "article/image-15.png",
