@@ -21,8 +21,8 @@ Docker Hub 是一个容器注册表，专为开发人员和开源贡献者构建
 为了继续使用DockerHub获取各种各样的镜像数据，我们可以尝试自己搭建代理，中转对Docker官方镜像仓库的请求，解决一些访问限制和加速访问的问题。下文介绍基于Cloudflare Workers的Docker镜像代理部署和使用。
 
 ## 部署DockerHub代理
-### fork仓库CF-Workers-docker.io
-将CF-Workers-docker.io(https://github.com/cmliu/CF-Workers-docker.io)fork到自己仓库。
+### fork仓库 CF-Workers-docker.io
+将 [CF-Workers-docker.io](https://github.com/cmliu/CF-Workers-docker.io) fork到自己仓库。
 
 ![](https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411270017433.png)
 
