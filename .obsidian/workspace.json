@@ -4,21 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "2be9d5d9a686b92c",
+        "id": "791ee996157f82b9",
         "type": "tabs",
         "children": [
           {
-            "id": "2c7259328c2ef4e0",
+            "id": "f99c40225438565c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "diff-view",
               "state": {
-                "file": "src/blogs/talk/2024-end.md",
-                "mode": "source",
-                "source": false
+                "file": ".obsidian/core-plugins.json",
+                "staged": false
               },
-              "icon": "lucide-file",
-              "title": "2024-end"
+              "icon": "git-pull-request",
+              "title": "Diff View (core-plugins.json)"
             }
           }
         ]
@@ -40,7 +39,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -151,8 +151,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "插件不再活动"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
@@ -160,8 +160,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -175,12 +174,21 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "2c7259328c2ef4e0",
+  "active": "f99c40225438565c",
   "lastOpenFiles": [
+    "src/blogs/notes/tcp-fast-open.md",
+    "src/blogs/notes/wireshark.png",
+    "src/blogs/notes/second.png",
+    "src/blogs/notes/README.md",
+    "src/blogs/notes/h3.png",
+    "src/blogs/notes/first.png",
+    "src/blogs/notes/2.png",
+    "src/blogs/notes/first.png.sb-9485e2e0-Yq0OAY",
+    "src/blogs/notes/wireshark copy.png",
+    "src/blogs/talk/2024-end.md",
     "src/blogs/code-visualization/cg-diff.md",
     "src/blogs/code-visualization/code-visualization-intro.md",
     "src/blogs/code-visualization/compiler.md",
-    "src/blogs/talk/2024-end.md",
     "src/blogs/talk/5-years-summarize.md",
     "src/blogs/ai/ai-search.md",
     "src/blogs/code-visualization/read-code-tools.md",
@@ -201,20 +209,11 @@
     "src/blogs/tools/one-cmd-web-to-app.md",
     "src/blogs/history/code-funny.md",
     "src/blogs/talk/sicau-share.md",
-    "src/blogs/tools/README.md",
-    "src/blogs/history/README.md",
     "src/blogs/code-visualization",
-    "src/blogs/未命名.md",
     "article/image.png",
     "article/image-8.png",
     "article/image-15.png",
-    "Pasted Image 20241130183610_275.png",
-    "Pasted Image 20241130230215_196.png",
-    "Pasted Image 20241130183612_227.png",
     "Excalidraw",
-    "Pasted Image 20241130172350_532.png",
-    "Pasted Image 20241130174857_882.png",
-    "Pasted Image 20241130174748_408.png",
     "未命名文件夹",
     "article/picture-auto-manager"
   ]
