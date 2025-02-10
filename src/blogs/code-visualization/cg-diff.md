@@ -267,10 +267,10 @@ private static Set<String> findChangeMethods(Map<String, MethodDeclaration> oldM
 越早评估出改动的影响面将更容易把风险扼杀在摇篮里，以更小的成本避免事故的发生。本文提供了一种"代码变更影响分析"功能的粗粒度实现方案，综合运用了Git、源码分析、可视化图表等技术。不过针对愈发复杂的业务现状，文中描述的功能还比较初级，还需要按场景进行针对性的增强和细化，从而真正做到对开发者有帮助。
 
 ## 参考
-﻿- [JavaParser](https://javaparser.org/)﻿
-﻿- [JGit-CookBook](https://github.com/centic9/jgit-cookbook)﻿
-﻿- [Graphviz](https://graphviz.org/)﻿
-﻿- [Graphviz-Java](https://github.com/nidi3/graphviz-java)
+- [JavaParser](https://javaparser.org/)﻿
+- [JGit-CookBook](https://github.com/centic9/jgit-cookbook)﻿
+- [Graphviz](https://graphviz.org/)﻿
+- [Graphviz-Java](https://github.com/nidi3/graphviz-java)
 
 <div style="text-align: center;"> —— 完 —— </div>
 
