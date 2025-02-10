@@ -20,6 +20,8 @@ tag:
 从应用优化的角度来看，因为要等到 TCP 经过三次握手建立连接之后才能发送应用层数据，所以会造成应用程序首次发送数据时存在一定的延迟，尤其是短连接、移动设备等场景中，这种副作用会加剧。
 
 为解决上述问题，**TCP Fast Open** 应运而生。
+<!-- more -->
+
 ## 原理
 TFO [提案](https://conferences.sigcomm.org/co-next/2011/papers/1569470463.pdf)最初于2011年提出，并于2014年12月作为实验性 [RFC 7413](https://datatracker.ietf.org/doc/html/rfc7413)发布。作为 TCP 协议的扩展，TFO 可以在 TCP 连接建立时就发送数据，而不需要等待 SYN 报文的确认。这大大提高 TCP 连接的建立速度，减少延迟。其核心原理是在发送方和接收方通信中引入 Cookie 机制，这样使发送方在后续重连接收方时能够得到简化。
 
@@ -113,7 +115,7 @@ curl --tcp-fastopen http://example.com
 
 ![](https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202502101857976.png)
 
-## 结语
+## 后语
 HTTP/3 通过 QUIC 协议提供了类似 TFO 的快速连接建立功能，且设计更为先进，能够直接在首次握手时发送数据，并解决了TCP的队头阻塞问题。等 HTTP/3 推广开来，TFO 也将成为时代的眼泪了。
 
 当前主流的网站已开始陆续支持HTTP/3，可以在 Chrome 浏览器打开开发者工具（F12），在 Network 面板中查看协议使用情况。
