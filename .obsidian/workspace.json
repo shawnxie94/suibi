@@ -4,20 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f0f3de065a7c4616",
+        "id": "824a50433f73b40a",
         "type": "tabs",
         "children": [
           {
-            "id": "dba3bf25d6d0176a",
+            "id": "167cdf74b3844e3f",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2025-05-10 15.47.46.excalidraw.md",
-                "staged": false
+                "file": "src/blogs/tools/read-flow.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "git-pull-request",
-              "title": "Diff View (Drawing 2025-05-10 15.47.46.excalidraw)"
+              "icon": "lucide-file",
+              "title": "read-flow"
             }
           }
         ]
@@ -77,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.5,
-    "collapsed": true
+    "width": 336.5
   },
   "right": {
     "id": "50930687bb4f99d0",
@@ -94,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "src/blogs/tools/read-flow.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "read-flow 的反向链接列表"
             }
           },
           {
@@ -112,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "src/blogs/tools/read-flow.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "read-flow 的出链列表"
             }
           },
           {
@@ -138,12 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "src/blogs/tools/read-flow.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "read-flow 的大纲"
             }
           },
           {
@@ -175,7 +178,7 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "dba3bf25d6d0176a",
+  "active": "5a50613090f66d59",
   "lastOpenFiles": [
     "src/blogs/tools/read-flow.md",
     "Excalidraw/Drawing 2025-05-10 15.47.46.excalidraw.md",
