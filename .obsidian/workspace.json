@@ -4,20 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "791ee996157f82b9",
+        "id": "f0f3de065a7c4616",
         "type": "tabs",
         "children": [
           {
-            "id": "f99c40225438565c",
+            "id": "dba3bf25d6d0176a",
             "type": "leaf",
             "state": {
               "type": "diff-view",
               "state": {
-                "file": ".obsidian/core-plugins.json",
+                "file": "Excalidraw/Drawing 2025-05-10 15.47.46.excalidraw.md",
                 "staged": false
               },
               "icon": "git-pull-request",
-              "title": "Diff View (core-plugins.json)"
+              "title": "Diff View (Drawing 2025-05-10 15.47.46.excalidraw)"
             }
           }
         ]
@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.5
+    "width": 336.5,
+    "collapsed": true
   },
   "right": {
     "id": "50930687bb4f99d0",
@@ -93,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/文章图片自动管理方案.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "文章图片自动管理方案 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
@@ -112,12 +112,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/文章图片自动管理方案.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "文章图片自动管理方案 的出链列表"
+              "title": "出链"
             }
           },
           {
@@ -139,10 +138,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/AI Agent初体验：变革正悄然发生.md"
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "AI Agent初体验：变革正悄然发生 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -160,7 +161,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 458.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -174,8 +175,13 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "f99c40225438565c",
+  "active": "dba3bf25d6d0176a",
   "lastOpenFiles": [
+    "src/blogs/tools/read-flow.md",
+    "Excalidraw/Drawing 2025-05-10 15.47.46.excalidraw.md",
+    "Excalidraw",
+    "src/blogs/tools/picture-manage.md",
+    "src/blogs/tools/one-cmd-web-to-app.md",
     "src/blogs/notes/tcp-fast-open.md",
     "src/blogs/notes/wireshark.png",
     "src/blogs/notes/second.png",
@@ -205,15 +211,11 @@
     "src/blogs/ai/README.md",
     "src/blogs/talk/README.md",
     "2024-09-12.md",
-    "src/blogs/tools/picture-manage.md",
-    "src/blogs/tools/one-cmd-web-to-app.md",
     "src/blogs/history/code-funny.md",
-    "src/blogs/talk/sicau-share.md",
     "src/blogs/code-visualization",
     "article/image.png",
     "article/image-8.png",
     "article/image-15.png",
-    "Excalidraw",
     "未命名文件夹",
     "article/picture-auto-manager"
   ]
