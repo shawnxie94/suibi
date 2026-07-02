@@ -1,0 +1,584 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { billingStatus } from "../data/billing";
+import { site } from "../data/profile";
+
+const expenseTotal = billingStatus.expenses.reduce((sum, item) => sum + item.amount, 0);
+const incomeTotal = billingStatus.incomes.reduce((sum, item) => sum + item.amount, 0);
+const recoveryDelta = incomeTotal - expenseTotal;
+const recoveryRate = expenseTotal > 0 ? Math.round((incomeTotal / expenseTotal) * 100) : 0;
+const formatMoney = (amount: number) =>
+  new Intl.NumberFormat("zh-CN", {
+    style: "currency",
+    currency: "CNY",
+    maximumFractionDigits: 0,
+  }).format(amount);
+const formatSignedMoney = (amount: number) => (amount > 0 ? `+${formatMoney(amount)}` : amount < 0 ? `-${formatMoney(Math.abs(amount))}` : formatMoney(0));
+const supportJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "支持我",
+  description: "肖恩聊技术的透明账单、支出收入汇总和支持方式。",
+  url: new URL("/support/", site.url).toString(),
+};
+---
+
+<BaseLayout title="支持我" description="肖恩聊技术的透明账单、支出收入汇总和支持方式。" jsonLd={supportJsonLd}>
+  <section class="shell support-hero">
+    <div>
+      <p class="eyebrow">Support</p>
+      <h1>支持我</h1>
+      <p>统计2026.01以来公共项目折腾账本。可通过助力方式支持我，助我回血，继续折腾！</p>
+    </div>
+    <div class="support-note" aria-label="账单更新时间">
+      <span>updated</span>
+      <strong>{billingStatus.updatedAt}</strong>
+    </div>
+  </section>
+
+  <div class="shell support-page">
+    <section class="support-overview" aria-label="账单总览">
+      <div>
+        <span>开销</span>
+        <strong>{formatMoney(expenseTotal)}</strong>
+      </div>
+      <div class:list={["delta", recoveryDelta >= 0 ? "is-positive" : "is-negative"]}>
+        <span>差值</span>
+        <strong>{formatSignedMoney(recoveryDelta)}</strong>
+      </div>
+      <div>
+        <span>收益</span>
+        <strong>{formatMoney(incomeTotal)}</strong>
+      </div>
+      <div class="recovery-rate">
+        <span>回血率</span>
+        <strong>{recoveryRate}%</strong>
+      </div>
+    </section>
+
+    <section class="ledger-section" aria-labelledby="ledger-title">
+      <div class="section-head">
+        <div>
+          <h2 id="ledger-title">账单明细</h2>
+        </div>
+      </div>
+
+      <div class="ledger-tables">
+        <section aria-labelledby="expense-title">
+          <h3 id="expense-title">支出</h3>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">类型</th>
+                <th scope="col">说明</th>
+                <th scope="col">金额</th>
+              </tr>
+            </thead>
+            <tbody>
+              {billingStatus.expenses.map((item) => (
+                <tr>
+                  <th scope="row">{item.type}</th>
+                  <td>{item.note}</td>
+                  <td>{formatMoney(item.amount)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </section>
+
+        <section aria-labelledby="income-title">
+          <h3 id="income-title">收入</h3>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">类型</th>
+                <th scope="col">说明</th>
+                <th scope="col">金额</th>
+              </tr>
+            </thead>
+            <tbody>
+              {billingStatus.incomes.map((item) => (
+                <tr>
+                  <th scope="row">{item.type}</th>
+                  <td>{item.note}</td>
+                  <td>{formatMoney(item.amount)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </section>
+
+    <section class="support-methods" aria-labelledby="support-methods-title">
+      <div class="section-head">
+        <div>
+          <h2 id="support-methods-title">助力方式</h2>
+        </div>
+      </div>
+
+      <div class="support-method-grid">
+        <article class="support-method">
+          <div>
+            <span>捧个人场</span>
+            <h3>关注公众号</h3>
+            <p>欢迎关注「肖恩聊技术」，阅读文章、点个推荐，都能帮内容多一点自然曝光。</p>
+          </div>
+          <button type="button" class="button-link secondary" data-support-wechat>二维码</button>
+        </article>
+
+        <article class="support-method">
+          <div>
+            <span>捧个钱场</span>
+            <h3>直接打赏</h3>
+            <p>如果某篇文章、项目或工具刚好帮上忙，也可以直接投喂🫶。</p>
+          </div>
+          <button type="button" class="button-link secondary" data-payment-open>收款码</button>
+        </article>
+
+        <article class="support-method">
+          <div>
+            <span>吃波安利</span>
+            <h3>推广链接</h3>
+            <p>提供个人在用值得推荐的产品或服务。通过链接注册或购买，我能获得返佣。</p>
+          </div>
+          <a class="button-link secondary" href="/aff/">推广页</a>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <dialog class="payment-dialog" data-payment-dialog aria-labelledby="payment-dialog-title">
+    <button type="button" class="payment-dialog__close" data-payment-close aria-label="关闭收款弹窗">×</button>
+    <div class="payment-card">
+      <p class="eyebrow">Sponsor</p>
+      <h2 id="payment-dialog-title">捧个钱场</h2>
+      <p>感谢投喂，金额随意，心意已收到。</p>
+      <div class="payment-code-grid" aria-label="收款码">
+        <figure>
+          <img src="/images/support/wechat-pay.png" alt="微信支付收款码" width="1242" height="1242" />
+          <figcaption>微信支付</figcaption>
+        </figure>
+        <figure>
+          <img src="/images/support/alipay.jpg" alt="支付宝收款码" width="797" height="797" />
+          <figcaption>支付宝</figcaption>
+        </figure>
+      </div>
+    </div>
+  </dialog>
+</BaseLayout>
+
+<script>
+  const supportWechat = document.querySelector("[data-support-wechat]");
+  const paymentOpen = document.querySelector("[data-payment-open]");
+  const paymentDialog = document.querySelector("[data-payment-dialog]");
+  const paymentClose = document.querySelector("[data-payment-close]");
+
+  const openDialog = (dialog: Element | null) => {
+    if (!(dialog instanceof HTMLDialogElement)) return;
+    if (typeof dialog.showModal === "function") {
+      dialog.showModal();
+    } else {
+      dialog.setAttribute("open", "");
+    }
+  };
+
+  const closeDialog = (dialog: Element | null) => {
+    if (!(dialog instanceof HTMLDialogElement)) return;
+    dialog.close();
+  };
+
+  supportWechat?.addEventListener("click", () => {
+    const open = (window as unknown as { openLightbox?: (content: { src: string; alt?: string; title?: string; subtitle?: string }) => void }).openLightbox;
+    if (typeof open === "function") {
+      open({
+        src: "/images/profile/20241103221454-9f58489a.png",
+        alt: "微信公众号二维码",
+        title: "捧个人场",
+        subtitle: "扫码关注「肖恩聊技术」",
+      });
+    }
+  });
+
+  paymentOpen?.addEventListener("click", () => openDialog(paymentDialog));
+  paymentClose?.addEventListener("click", () => closeDialog(paymentDialog));
+  paymentDialog?.addEventListener("click", (event) => {
+    if (event.target === paymentDialog) closeDialog(paymentDialog);
+  });
+</script>
+
+<style>
+  .support-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 24px;
+    align-items: end;
+    padding: 54px 0 20px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .support-hero h1 {
+    max-width: 760px;
+    margin: 0;
+    font-size: clamp(2.4rem, 7vw, 5.6rem);
+    line-height: 0.96;
+    text-transform: uppercase;
+  }
+
+  .support-hero p:not(.eyebrow) {
+    max-width: 760px;
+    margin: 18px 0 0;
+    color: var(--muted);
+    font-size: 1.06rem;
+    line-height: 1.8;
+  }
+
+  .support-note {
+    display: grid;
+    gap: 2px;
+    min-width: 150px;
+    padding: 12px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.76);
+  }
+
+  .support-note span,
+  .support-overview span,
+  .support-method span {
+    color: var(--subtle);
+    font-size: 0.76rem;
+    font-weight: 720;
+    text-transform: uppercase;
+  }
+
+  .support-page {
+    display: grid;
+    gap: 34px;
+    padding-top: 22px;
+  }
+
+  .support-overview {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.72);
+  }
+
+  .support-overview div {
+    display: grid;
+    gap: 5px;
+    min-width: 0;
+    padding: 16px;
+    border-right: 1px solid var(--border);
+  }
+
+  .support-overview div:last-child {
+    border-right: 0;
+  }
+
+  .support-overview strong {
+    overflow-wrap: anywhere;
+    font-size: 1.45rem;
+    line-height: 1.18;
+  }
+
+  .support-overview .is-negative strong {
+    color: #9f2b24;
+  }
+
+  .support-overview .is-positive strong {
+    color: #0f7b55;
+  }
+
+  .support-overview .recovery-rate strong {
+    color: #9f2b24;
+  }
+
+  .ledger-section,
+  .support-methods {
+    display: grid;
+    gap: 14px;
+  }
+
+  .ledger-tables {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .ledger-tables section {
+    min-width: 0;
+  }
+
+  .ledger-tables h3 {
+    margin: 0 0 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  .ledger-tables h3::before {
+    content: "./";
+    color: var(--subtle);
+  }
+
+  .ledger-tables table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid var(--border);
+    font-size: 0.92rem;
+  }
+
+  .ledger-tables th,
+  .ledger-tables td {
+    padding: 11px 10px;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .ledger-tables thead th {
+    color: var(--subtle);
+    font-size: 0.76rem;
+    text-transform: uppercase;
+  }
+
+  .ledger-tables tbody tr:last-child th,
+  .ledger-tables tbody tr:last-child td {
+    border-bottom: 0;
+  }
+
+  .ledger-tables tbody th {
+    width: 26%;
+    font-weight: 760;
+  }
+
+  .ledger-tables td:nth-child(2) {
+    color: var(--muted);
+    line-height: 1.55;
+  }
+
+  .ledger-tables td:last-child {
+    width: 96px;
+    font-weight: 760;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .support-method-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .support-method {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+  }
+
+  .support-method h3 {
+    margin: 5px 0 0;
+    font-size: 1.1rem;
+    line-height: 1.35;
+  }
+
+  .support-method p {
+    margin: 10px 0 0;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  .support-method .button-link {
+    align-self: flex-start;
+  }
+
+  .payment-dialog {
+    width: min(100% - 32px, 760px);
+    max-height: min(88dvh, 760px);
+    padding: 0;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow-y: auto;
+  }
+
+  .payment-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.32);
+  }
+
+  .payment-dialog__close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 780;
+    line-height: 1;
+  }
+
+  .payment-dialog__close:hover {
+    color: var(--surface);
+    background: var(--accent);
+  }
+
+  .payment-card {
+    padding: 22px;
+  }
+
+  .payment-card h2 {
+    margin: 0;
+    font-size: clamp(1.42rem, 4vw, 2rem);
+    line-height: 1.08;
+    text-transform: uppercase;
+  }
+
+  .payment-card p:not(.eyebrow) {
+    margin: 12px 0 0;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  .payment-code-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 16px;
+  }
+
+  .payment-code-grid figure {
+    display: grid;
+    gap: 8px;
+    margin: 0;
+  }
+
+  .payment-code-grid img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
+    background: var(--surface);
+    border: 1px solid var(--border);
+  }
+
+  .payment-code-grid figcaption {
+    color: var(--muted);
+    font-size: 0.86rem;
+    font-weight: 720;
+    line-height: 1.4;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  :global(body:has(.payment-dialog[open])) {
+    overflow: hidden;
+  }
+
+  @media (max-width: 900px) {
+    .support-hero,
+    .ledger-tables,
+    .support-method-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .support-note {
+      width: max-content;
+    }
+
+    .support-overview {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .support-overview div:nth-child(2) {
+      border-right: 0;
+    }
+
+    .support-overview div:nth-child(-n + 2) {
+      border-bottom: 1px solid var(--border);
+    }
+  }
+
+  @media (max-width: 620px) {
+    .support-hero {
+      padding-top: 34px;
+    }
+
+    .support-overview {
+      grid-template-columns: 1fr;
+    }
+
+    .payment-dialog {
+      width: 100dvw;
+      max-height: 100dvh;
+      height: 100dvh;
+      border: 0;
+    }
+
+    .payment-code-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .support-overview div {
+      border-right: 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .support-overview div:last-child {
+      border-bottom: 0;
+    }
+
+    .ledger-tables table,
+    .ledger-tables thead,
+    .ledger-tables tbody,
+    .ledger-tables tr,
+    .ledger-tables th,
+    .ledger-tables td {
+      display: block;
+      width: 100%;
+    }
+
+    .ledger-tables thead {
+      display: none;
+    }
+
+    .ledger-tables tr {
+      padding: 11px 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .ledger-tables tbody tr:last-child {
+      border-bottom: 0;
+    }
+
+    .ledger-tables th,
+    .ledger-tables td {
+      padding: 0;
+      border-bottom: 0;
+    }
+
+    .ledger-tables td:nth-child(2) {
+      margin-top: 4px;
+    }
+
+    .ledger-tables td:last-child {
+      margin-top: 8px;
+      text-align: left;
+    }
+  }
+</style>
